@@ -15,6 +15,7 @@
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
+				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="Boolean Array to Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDT.llb/Boolean Array to Digital.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
@@ -287,6 +288,7 @@
 				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_Gmath.lvlib" Type="Library" URL="/&lt;vilib&gt;/gmath/NI_Gmath.lvlib"/>
+				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
@@ -355,7 +357,6 @@
 			<Item Name="CAL-Read Data.vi" Type="VI" URL="../../Common VIs/File IO VIs/CAL-Read Data.vi"/>
 			<Item Name="CAL-Response.ctl" Type="VI" URL="../../Common VIs/Typedefs/CAL-Response.ctl"/>
 			<Item Name="CAL-Save Data.vi" Type="VI" URL="../../Common VIs/File IO VIs/CAL-Save Data.vi"/>
-			<Item Name="CAL-Save data.vi" Type="VI" URL="../Common VIs/File IO VIs/CAL-Save data.vi"/>
 			<Item Name="CAL-Smooth.vi" Type="VI" URL="../../Common VIs/Analysis VIs/CAL-Smooth.vi"/>
 			<Item Name="CAL-Stimulus.ctl" Type="VI" URL="../../Common VIs/Typedefs/CAL-Stimulus.ctl"/>
 			<Item Name="CalMic-Initialize Hardware.vi" Type="VI" URL="../../Common VIs/Mic Sensitivity VIs/Sub VIs/CalMic-Initialize Hardware.vi"/>
@@ -371,10 +372,6 @@
 			<Item Name="CumSum.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/CumSum.vi"/>
 			<Item Name="DAQ-Stop All.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/DAQ-Stop All.vi"/>
 			<Item Name="DAQ-Sync and Start.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/DAQ-Sync and Start.vi"/>
-			<Item Name="dB to Linear (1D).vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/dB to Linear (1D).vi"/>
-			<Item Name="dB to Linear (2D).vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/dB to Linear (2D).vi"/>
-			<Item Name="dB to Linear (scalar).vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/dB to Linear (scalar).vi"/>
-			<Item Name="dB to Linear.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/dB to Linear.vi"/>
 			<Item Name="dB, degrees to Z.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/dB, degrees to Z.vi"/>
 			<Item Name="DI-Output Spec.ctl" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/AIDI/Typedefs/DI-Output Spec.ctl"/>
 			<Item Name="DO-Output Spec.ctl" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/AODO/Typedefs/DO-Output Spec.ctl"/>
@@ -392,21 +389,17 @@
 			<Item Name="FileIO-Open Dialog.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/FileIO-Open Dialog.vi"/>
 			<Item Name="Filter Error.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Error Handling VIs/Filter Error.vi"/>
 			<Item Name="Get Cluster Elements.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Get Cluster Elements.vi"/>
-			<Item Name="Get Terminal Name with Device Prefix.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/Get Terminal Name with Device Prefix.vi"/>
 			<Item Name="Get Type Info.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Get Type Info.vi"/>
 			<Item Name="Get Variant Attribute With Defaults.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Get Variant Attribute With Defaults.vi"/>
 			<Item Name="Insert Reserved Error.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Insert Reserved Error.vi"/>
 			<Item Name="interp1 (1D).vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/interp1 (1D).vi"/>
-			<Item Name="Is 24-bit task.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/Is 24-bit task.vi"/>
 			<Item Name="KObject.lvclass" Type="LVClass" URL="../../../epl-vi-lib/Koop/KObject Class/KObject.lvclass"/>
-			<Item Name="Linear to dB (2D).vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/Linear to dB (2D).vi"/>
-			<Item Name="Linear to dB (array).vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/Linear to dB (array).vi"/>
-			<Item Name="Linear to dB (scalar).vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/Linear to dB (scalar).vi"/>
-			<Item Name="Linear to dB.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/Linear to dB.vi"/>
 			<Item Name="LinSpace (start-stop-step).vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/LinSpace (start-stop-step).vi"/>
 			<Item Name="LinSpace (x0-dx-npts).vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/LinSpace (x0-dx-npts).vi"/>
 			<Item Name="LinSpace.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/LinSpace.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="Math-dB To Linear.vim" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/Math-dB To Linear.vim"/>
+			<Item Name="Math-Linear to dB.vim" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/Math-Linear to dB.vim"/>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -414,8 +407,15 @@
 			<Item Name="Process Array Elements.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Process Array Elements.vi"/>
 			<Item Name="PXI Multipliers to AO Gains (1D).vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/AO Gain and Multiplier VIs/PXI Multipliers to AO Gains (1D).vi"/>
 			<Item Name="PXI Multipliers to AO Gains (scalar).vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/AO Gain and Multiplier VIs/PXI Multipliers to AO Gains (scalar).vi"/>
+			<Item Name="PXI-Compute Skip Samples.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/PXI-Compute Skip Samples.vi"/>
+			<Item Name="PXI-Connections File Path.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/Top Level VIs/PXI-Connections File Path.vi"/>
 			<Item Name="PXI-Find 1st 16-bit Board.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/PXI-Find 1st 16-bit Board.vi"/>
+			<Item Name="PXI-Get Delays.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/PXI-Get Delays.vi"/>
+			<Item Name="PXI-Get Input Terminal Configuration.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/PXI-Get Input Terminal Configuration.vi"/>
 			<Item Name="PXI-Get Slot Number.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/Top Level VIs/PXI-Get Slot Number.vi"/>
+			<Item Name="PXI-Get Terminal Name with Device Prefix.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/PXI-Get Terminal Name with Device Prefix.vi"/>
+			<Item Name="PXI-Is Any Task 16-bit.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/PXI-Is Any Task 16-bit.vi"/>
+			<Item Name="PXI-Is Task 24-bit.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/PXI-Is Task 24-bit.vi"/>
 			<Item Name="PXI-Set Trigger Output.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/PXI-Set Trigger Output.vi"/>
 			<Item Name="PXI-Task to Device Properties.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/PXI-Task to Device Properties.vi"/>
 			<Item Name="PXI-Zero 16-bit Outputs (by device).vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/PXI-Zero 16-bit Outputs (by device).vi"/>
