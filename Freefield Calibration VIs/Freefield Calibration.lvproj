@@ -13,7 +13,6 @@
 		<Item Name="LV Source" Type="Folder" URL="../LV Source">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="CAL-Data.ctl" Type="VI" URL="../../Common VIs/Typedefs/CAL-Data.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
@@ -348,7 +347,9 @@
 			<Item Name="Build Line.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Build Line.vi"/>
 			<Item Name="Cal Mic Sensitivity.vi" Type="VI" URL="../../Common VIs/Mic Sensitivity VIs/Cal Mic Sensitivity.vi"/>
 			<Item Name="CAL-Create Stimulus.vi" Type="VI" URL="../../Common VIs/Stimulus VIs/CAL-Create Stimulus.vi"/>
+			<Item Name="CAL-Data.ctl" Type="VI" URL="../../Common VIs/Typedefs/CAL-Data.ctl"/>
 			<Item Name="CAL-Endpoint.ctl" Type="VI" URL="../../Common VIs/Typedefs/CAL-Endpoint.ctl"/>
+			<Item Name="CAL-Globals.vi" Type="VI" URL="../../Common VIs/Typedefs/CAL-Globals.vi"/>
 			<Item Name="CAL-Interp.vi" Type="VI" URL="../../Common VIs/Analysis VIs/CAL-Interp.vi"/>
 			<Item Name="CAL-Plot Data.vi" Type="VI" URL="../../Common VIs/Analysis VIs/CAL-Plot Data.vi"/>
 			<Item Name="CAL-Read Data.vi" Type="VI" URL="../../Common VIs/File IO VIs/CAL-Read Data.vi"/>
