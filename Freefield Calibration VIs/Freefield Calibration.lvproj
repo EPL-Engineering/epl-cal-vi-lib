@@ -356,7 +356,7 @@
 			<Item Name="CAL-Plot Data.vi" Type="VI" URL="../../Common VIs/Analysis VIs/CAL-Plot Data.vi"/>
 			<Item Name="CAL-Read Data.vi" Type="VI" URL="../../Common VIs/File IO VIs/CAL-Read Data.vi"/>
 			<Item Name="CAL-Response.ctl" Type="VI" URL="../../Common VIs/Typedefs/CAL-Response.ctl"/>
-			<Item Name="CAL-Save Data.vi" Type="VI" URL="../../Common VIs/File IO VIs/CAL-Save Data.vi"/>
+			<Item Name="CAL-Save Data.vim" Type="VI" URL="../../Common VIs/File IO VIs/CAL-Save Data.vim"/>
 			<Item Name="CAL-Smooth.vi" Type="VI" URL="../../Common VIs/Analysis VIs/CAL-Smooth.vi"/>
 			<Item Name="CAL-Stimulus.ctl" Type="VI" URL="../../Common VIs/Typedefs/CAL-Stimulus.ctl"/>
 			<Item Name="CalMic-Initialize Hardware.vi" Type="VI" URL="../../Common VIs/Mic Sensitivity VIs/Sub VIs/CalMic-Initialize Hardware.vi"/>
