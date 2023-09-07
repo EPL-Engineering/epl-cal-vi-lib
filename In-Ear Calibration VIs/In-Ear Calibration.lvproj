@@ -261,6 +261,9 @@
 				<Item Name="DWDT Empty Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Empty Digital.vi"/>
 				<Item Name="DWDT Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Error Code.vi"/>
 				<Item Name="DWDT Uncompress Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Uncompress Digital.vi"/>
+				<Item Name="Equal Comparable.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Comparison/Equal/Equal Comparable/Equal Comparable.lvclass"/>
+				<Item Name="Equal Functor.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Comparison/Equal/Equal Functor/Equal Functor.lvclass"/>
+				<Item Name="Equals.vim" Type="VI" URL="/&lt;vilib&gt;/Comparison/Equals.vim"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
 				<Item Name="ErrWarn.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/ErrWarn.ctl"/>
@@ -282,6 +285,7 @@
 				<Item Name="LVNumericRepresentation.ctl" Type="VI" URL="/&lt;vilib&gt;/numeric/LVNumericRepresentation.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="New VI Library.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/New VI Library.vi"/>
+				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
 				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
@@ -289,7 +293,10 @@
 				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
+				<Item Name="RGB to Color.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/RGB to Color.vi"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
+				<Item Name="Search Unsorted 1D Array Core.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Helpers/Search Unsorted 1D Array Core.vim"/>
+				<Item Name="Search Unsorted 1D Array.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Search Unsorted 1D Array.vim"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
@@ -301,7 +308,9 @@
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
+				<Item Name="Version To Dotted String.vi" Type="VI" URL="/&lt;vilib&gt;/_xctls/Version To Dotted String.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
+				<Item Name="XControlSupport.lvlib" Type="Library" URL="/&lt;vilib&gt;/_xctls/XControlSupport.lvlib"/>
 			</Item>
 			<Item Name="ACal-Plot Data.vi" Type="VI" URL="../LV Source/Analysis VIs/ACal-Plot Data.vi"/>
 			<Item Name="AIDI-Action.ctl" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/AIDI/Typedefs/AIDI-Action.ctl"/>
@@ -357,14 +366,18 @@
 			<Item Name="CAL-Probe Tube Cal Path (speaker).vi" Type="VI" URL="../LV Source/File IO VIs/CAL-Probe Tube Cal Path (speaker).vi"/>
 			<Item Name="CAL-Read Data.vi" Type="VI" URL="../../Common VIs/File IO VIs/CAL-Read Data.vi"/>
 			<Item Name="CAL-Save Data.vim" Type="VI" URL="../../Common VIs/File IO VIs/CAL-Save Data.vim"/>
+			<Item Name="CAL-Speaker Cal Path.vi" Type="VI" URL="../LV Source/File IO VIs/CAL-Speaker Cal Path.vi"/>
 			<Item Name="CAL-Stimulus.ctl" Type="VI" URL="../../Common VIs/Typedefs/CAL-Stimulus.ctl"/>
 			<Item Name="Center Window on Parent.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Windows VIs/Center Window on Parent.vi"/>
+			<Item Name="CFTS-Experiment State.ctl" Type="VI" URL="../cfts/LV Source/CFTS Main Panel SubVIs/CFTS-Experiment State.ctl"/>
+			<Item Name="CFTS-Get Data Folder.vi" Type="VI" URL="../cfts/LV Source/CFTS Main Panel SubVIs/CFTS-Get Data Folder.vi"/>
 			<Item Name="CIE2T-Compute Max SPL.vi" Type="VI" URL="../LV Source/Analysis VIs/CIE2T-Compute Max SPL.vi"/>
 			<Item Name="CIE2T-Config.vi" Type="VI" URL="../LV Source/SubVIs/CIE2T-Config.vi"/>
 			<Item Name="CIE2T-Find Optimal Attenuation.vi" Type="VI" URL="../LV Source/SubVIs/CIE2T-Find Optimal Attenuation.vi"/>
 			<Item Name="CM-TDT-Endpoint To Sequential Connection Number (1D String).vi" Type="VI" URL="../epl-vi-lib/Connection VIs/TDT VIs/CM-TDT-Endpoint To Sequential Connection Number (1D String).vi"/>
 			<Item Name="Config File Path.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/System Info VIs/Config File Path.vi"/>
 			<Item Name="Create Directory Chain.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Create Directory Chain.vi"/>
+			<Item Name="Create Prism Color Map.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/Create Prism Color Map.vi"/>
 			<Item Name="Create Waveform Cluster (1D).vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Conversion VIs/Create Waveform Cluster (1D).vi"/>
 			<Item Name="Create Waveform Cluster (2D).vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Conversion VIs/Create Waveform Cluster (2D).vi"/>
 			<Item Name="Create Waveform Cluster.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Conversion VIs/Create Waveform Cluster.vi"/>
@@ -398,16 +411,23 @@
 			<Item Name="Get Cluster Elements.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Get Cluster Elements.vi"/>
 			<Item Name="Get Type Info.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Get Type Info.vi"/>
 			<Item Name="Get Variant Attribute With Defaults.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Get Variant Attribute With Defaults.vi"/>
+			<Item Name="Graphic-Generate Color Map.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Graphics VIs/Graphic-Generate Color Map.vi"/>
+			<Item Name="Graphics-Add Plot.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Graphics VIs/Graphics-Add Plot.vi"/>
+			<Item Name="Graphics-Delete Plots.vim" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Graphics VIs/Graphics-Delete Plots.vim"/>
+			<Item Name="Graphics-Get Plot Properties.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Graphics VIs/Graphics-Get Plot Properties.vi"/>
+			<Item Name="Graphics-HSV to RGB.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Graphics VIs/Graphics-HSV to RGB.vi"/>
+			<Item Name="Graphics-Plot Properties.ctl" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Graphics VIs/Graphics-Plot Properties.ctl"/>
+			<Item Name="Graphics-Reorder Plots.vim" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Graphics VIs/Graphics-Reorder Plots.vim"/>
+			<Item Name="Graphics-Set Plot Properties.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Graphics VIs/Graphics-Set Plot Properties.vi"/>
 			<Item Name="Input sources.ctl" Type="VI" URL="../epl-vi-lib/Connection VIs/Type Defs/Input sources.ctl"/>
 			<Item Name="Insert Reserved Error.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Insert Reserved Error.vi"/>
-			<Item Name="interp1 (1D).vi" Type="VI" URL="../Utility VIs/Math VIs/interp1 (1D).vi"/>
 			<Item Name="interp1 (1D).vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/interp1 (1D).vi"/>
 			<Item Name="Interp1 (poly).vi" Type="VI" URL="../epl-vi-lib/Utility VIs/Math VIs/Interp1 (poly).vi"/>
+			<Item Name="interp1.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/interp1.vi"/>
 			<Item Name="KCheckmarkBoolean 2.ctl" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Buttons/KCheckmarkBoolean 2.ctl"/>
+			<Item Name="KLegend.xctl" Type="XControl" URL="../../../epl-vi-lib/Utility VIs/Controls/KLegend/KLegend.xctl"/>
 			<Item Name="KObject.lvclass" Type="LVClass" URL="../../../epl-vi-lib/Koop/KObject Class/KObject.lvclass"/>
 			<Item Name="Left-Right ring.ctl" Type="VI" URL="../epl-vi-lib/Utility VIs/Type Defs/Left-Right ring.ctl"/>
-			<Item Name="Linear to dB (scalar).vi" Type="VI" URL="../Utility VIs/Math VIs/Linear to dB (scalar).vi"/>
-			<Item Name="Linear to dB.vi" Type="VI" URL="../Utility VIs/Math VIs/Linear to dB.vi"/>
 			<Item Name="LinSpace (start-stop-step).vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/LinSpace (start-stop-step).vi"/>
 			<Item Name="LinSpace (x0-dx-npts).vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/LinSpace (x0-dx-npts).vi"/>
 			<Item Name="LinSpace.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/LinSpace.vi"/>
@@ -422,8 +442,6 @@
 			<Item Name="Process Array Elements.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Process Array Elements.vi"/>
 			<Item Name="PXI Attens to Multipliers (1D).vi" Type="VI" URL="../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/AO Gain and Multiplier VIs/PXI Attens to Multipliers (1D).vi"/>
 			<Item Name="PXI Globals.vi" Type="VI" URL="../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/PXI Globals.vi"/>
-			<Item Name="PXI Globals.vi" Type="VI" URL="../PXI DAQ VIs/DAQ Engine VIs/PXI Globals.vi"/>
-			<Item Name="PXI Multipliers to AO Gains (1D).vi" Type="VI" URL="../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/AO Gain and Multiplier VIs/PXI Multipliers to AO Gains (1D).vi"/>
 			<Item Name="PXI Multipliers to AO Gains (1D).vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/AO Gain and Multiplier VIs/PXI Multipliers to AO Gains (1D).vi"/>
 			<Item Name="PXI Multipliers to AO Gains (scalar).vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/AO Gain and Multiplier VIs/PXI Multipliers to AO Gains (scalar).vi"/>
 			<Item Name="PXI Multipliers to AO Gains.vi" Type="VI" URL="../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/AO Gain and Multiplier VIs/PXI Multipliers to AO Gains.vi"/>
@@ -455,6 +473,7 @@
 			<Item Name="SGDA-Read Data.vi" Type="VI" URL="../epl-vi-lib/PXI DAQ VIs/Top Level VIs/SGDA VIs/SGDA-Read Data.vi"/>
 			<Item Name="SGDA-Start.vi" Type="VI" URL="../epl-vi-lib/PXI DAQ VIs/Top Level VIs/SGDA VIs/SGDA-Start.vi"/>
 			<Item Name="SGDA-Stop.vi" Type="VI" URL="../epl-vi-lib/PXI DAQ VIs/Top Level VIs/SGDA VIs/SGDA-Stop.vi"/>
+			<Item Name="Speaker ring.ctl" Type="VI" URL="../epl-vi-lib/Utility VIs/Type Defs/Speaker ring.ctl"/>
 			<Item Name="StrQueue-Set Event Case Timeout.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Snippets/StrQueue-Set Event Case Timeout.vi"/>
 			<Item Name="Suppress Error Code - Array.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Suppress Error Code - Array.vi"/>
 			<Item Name="Suppress Error Code - Scalar.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Suppress Error Code - Scalar.vi"/>
