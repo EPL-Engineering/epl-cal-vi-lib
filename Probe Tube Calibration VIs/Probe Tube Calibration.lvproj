@@ -13,16 +13,28 @@
 		<Item Name="LV Source" Type="Folder" URL="../LV Source">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="CAL-Apply Microphone Correction.vi" Type="VI" URL="../../Common VIs/Analysis VIs/CAL-Apply Microphone Correction.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
+				<Item Name="Bit-array To Byte-array.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Bit-array To Byte-array.vi"/>
 				<Item Name="Boolean Array to Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDT.llb/Boolean Array to Digital.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
+				<Item Name="Built App File Layout.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/Built App File Layout.vi"/>
+				<Item Name="Calc Long Word Padded Width.vi" Type="VI" URL="/&lt;vilib&gt;/picture/bmp.llb/Calc Long Word Padded Width.vi"/>
+				<Item Name="Check Color Table Size.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Check Color Table Size.vi"/>
+				<Item Name="Check Data Size.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Check Data Size.vi"/>
+				<Item Name="Check File Permissions.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Check File Permissions.vi"/>
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
+				<Item Name="Check Path.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Check Path.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
+				<Item Name="Close Registry Key.vi" Type="VI" URL="/&lt;vilib&gt;/registry/registry.llb/Close Registry Key.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
+				<Item Name="Create ActiveX Event Queue.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/ax-events.llb/Create ActiveX Event Queue.vi"/>
+				<Item Name="Create Error Clust.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/ax-events.llb/Create Error Clust.vi"/>
+				<Item Name="Create Mask By Alpha.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Create Mask By Alpha.vi"/>
 				<Item Name="DAQmx Advance Trigger (Digital Edge).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/trigger.llb/DAQmx Advance Trigger (Digital Edge).vi"/>
 				<Item Name="DAQmx Advance Trigger (None).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/trigger.llb/DAQmx Advance Trigger (None).vi"/>
 				<Item Name="DAQmx Clear Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Clear Task.vi"/>
@@ -246,10 +258,12 @@
 				<Item Name="DAQmx Write (Raw 1D U16).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Raw 1D U16).vi"/>
 				<Item Name="DAQmx Write (Raw 1D U32).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Raw 1D U32).vi"/>
 				<Item Name="DAQmx Write.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write.vi"/>
+				<Item Name="Destroy ActiveX Event Queue.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/ax-events.llb/Destroy ActiveX Event Queue.vi"/>
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
 				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
 				<Item Name="Digital to Boolean Array.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDT.llb/Digital to Boolean Array.vi"/>
+				<Item Name="Directory of Top Level VI.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Directory of Top Level VI.vi"/>
 				<Item Name="DTbl Boolean Array to Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Boolean Array to Digital.vi"/>
 				<Item Name="DTbl Compress Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Compress Digital.vi"/>
 				<Item Name="DTbl Digital Size.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Digital Size.vi"/>
@@ -267,19 +281,25 @@
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
 				<Item Name="ErrWarn.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/ErrWarn.ctl"/>
+				<Item Name="Escape Characters for HTTP.vi" Type="VI" URL="/&lt;vilib&gt;/printing/PathToURL.llb/Escape Characters for HTTP.vi"/>
+				<Item Name="EventData.ctl" Type="VI" URL="/&lt;vilib&gt;/Platform/ax-events.llb/EventData.ctl"/>
 				<Item Name="eventvkey.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/eventvkey.ctl"/>
 				<Item Name="ex_CorrectErrorChain.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_CorrectErrorChain.vi"/>
 				<Item Name="Find Tag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find Tag.vi"/>
+				<Item Name="Flip and Pad for Picture Control.vi" Type="VI" URL="/&lt;vilib&gt;/picture/bmp.llb/Flip and Pad for Picture Control.vi"/>
 				<Item Name="Format Message String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Format Message String.vi"/>
 				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
+				<Item Name="Generate Temporary File Path.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Generate Temporary File Path.vi"/>
 				<Item Name="Get File Extension.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Get File Extension.vi"/>
+				<Item Name="Get LV Class Default Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Default Value.vi"/>
 				<Item Name="Get LV Class Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Name.vi"/>
 				<Item Name="Get String Text Bounds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Get String Text Bounds.vi"/>
 				<Item Name="Get System Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/Get System Directory.vi"/>
 				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
 				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
+				<Item Name="imagedata.ctl" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/imagedata.ctl"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVNumericRepresentation.ctl" Type="VI" URL="/&lt;vilib&gt;/numeric/LVNumericRepresentation.ctl"/>
@@ -290,9 +310,31 @@
 				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_Gmath.lvlib" Type="Library" URL="/&lt;vilib&gt;/gmath/NI_Gmath.lvlib"/>
+				<Item Name="NI_HTML.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Utility/NIReport.llb/HTML/NI_HTML.lvclass"/>
 				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
+				<Item Name="NI_report.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Utility/NIReport.llb/NI_report.lvclass"/>
+				<Item Name="NI_ReportGenerationCore.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/NIReport.llb/NI_ReportGenerationCore.lvlib"/>
+				<Item Name="NI_Standard Report.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Utility/NIReport.llb/Standard Report/NI_Standard Report.lvclass"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
+				<Item Name="OccFireType.ctl" Type="VI" URL="/&lt;vilib&gt;/Platform/ax-events.llb/OccFireType.ctl"/>
+				<Item Name="Open Registry Key.vi" Type="VI" URL="/&lt;vilib&gt;/registry/registry.llb/Open Registry Key.vi"/>
+				<Item Name="Path to URL inner.vi" Type="VI" URL="/&lt;vilib&gt;/printing/PathToURL.llb/Path to URL inner.vi"/>
+				<Item Name="Path to URL.vi" Type="VI" URL="/&lt;vilib&gt;/printing/PathToURL.llb/Path to URL.vi"/>
+				<Item Name="Read PNG File.vi" Type="VI" URL="/&lt;vilib&gt;/picture/png.llb/Read PNG File.vi"/>
+				<Item Name="Read Registry Value DWORD.vi" Type="VI" URL="/&lt;vilib&gt;/registry/registry.llb/Read Registry Value DWORD.vi"/>
+				<Item Name="Read Registry Value Simple STR.vi" Type="VI" URL="/&lt;vilib&gt;/registry/registry.llb/Read Registry Value Simple STR.vi"/>
+				<Item Name="Read Registry Value Simple U32.vi" Type="VI" URL="/&lt;vilib&gt;/registry/registry.llb/Read Registry Value Simple U32.vi"/>
+				<Item Name="Read Registry Value Simple.vi" Type="VI" URL="/&lt;vilib&gt;/registry/registry.llb/Read Registry Value Simple.vi"/>
+				<Item Name="Read Registry Value STR.vi" Type="VI" URL="/&lt;vilib&gt;/registry/registry.llb/Read Registry Value STR.vi"/>
+				<Item Name="Read Registry Value.vi" Type="VI" URL="/&lt;vilib&gt;/registry/registry.llb/Read Registry Value.vi"/>
+				<Item Name="Registry Handle Master.vi" Type="VI" URL="/&lt;vilib&gt;/registry/registry.llb/Registry Handle Master.vi"/>
+				<Item Name="Registry refnum.ctl" Type="VI" URL="/&lt;vilib&gt;/registry/registry.llb/Registry refnum.ctl"/>
+				<Item Name="Registry RtKey.ctl" Type="VI" URL="/&lt;vilib&gt;/registry/registry.llb/Registry RtKey.ctl"/>
+				<Item Name="Registry SAM.ctl" Type="VI" URL="/&lt;vilib&gt;/registry/registry.llb/Registry SAM.ctl"/>
+				<Item Name="Registry Simplify Data Type.vi" Type="VI" URL="/&lt;vilib&gt;/registry/registry.llb/Registry Simplify Data Type.vi"/>
+				<Item Name="Registry View.ctl" Type="VI" URL="/&lt;vilib&gt;/registry/registry.llb/Registry View.ctl"/>
+				<Item Name="Registry WinErr-LVErr.vi" Type="VI" URL="/&lt;vilib&gt;/registry/registry.llb/Registry WinErr-LVErr.vi"/>
 				<Item Name="RGB to Color.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/RGB to Color.vi"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Search Unsorted 1D Array Core.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Helpers/Search Unsorted 1D Array Core.vim"/>
@@ -301,6 +343,7 @@
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
+				<Item Name="STR_ASCII-Unicode.vi" Type="VI" URL="/&lt;vilib&gt;/registry/registry.llb/STR_ASCII-Unicode.vi"/>
 				<Item Name="subFile Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/FileDialogBlock.llb/subFile Dialog.vi"/>
 				<Item Name="System Directory Type.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/System Directory Type.ctl"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
@@ -309,10 +352,20 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="Version To Dotted String.vi" Type="VI" URL="/&lt;vilib&gt;/_xctls/Version To Dotted String.vi"/>
+				<Item Name="Wait On ActiveX Event.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/ax-events.llb/Wait On ActiveX Event.vi"/>
+				<Item Name="Wait types.ctl" Type="VI" URL="/&lt;vilib&gt;/Platform/ax-events.llb/Wait types.ctl"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
+				<Item Name="Write BMP Data To Buffer.vi" Type="VI" URL="/&lt;vilib&gt;/picture/bmp.llb/Write BMP Data To Buffer.vi"/>
+				<Item Name="Write BMP Data.vi" Type="VI" URL="/&lt;vilib&gt;/picture/bmp.llb/Write BMP Data.vi"/>
+				<Item Name="Write BMP File.vi" Type="VI" URL="/&lt;vilib&gt;/picture/bmp.llb/Write BMP File.vi"/>
+				<Item Name="Write GIF File.vi" Type="VI" URL="/&lt;vilib&gt;/picture/gif.llb/Write GIF File.vi"/>
+				<Item Name="Write JPEG File.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Write JPEG File.vi"/>
+				<Item Name="Write PNG File.vi" Type="VI" URL="/&lt;vilib&gt;/picture/png.llb/Write PNG File.vi"/>
 				<Item Name="XControlSupport.lvlib" Type="Library" URL="/&lt;vilib&gt;/_xctls/XControlSupport.lvlib"/>
 			</Item>
-			<Item Name="ACal-Plot Data.vi" Type="VI" URL="../LV Source/Analysis VIs/ACal-Plot Data.vi"/>
+			<Item Name="Advapi32.dll" Type="Document" URL="Advapi32.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 			<Item Name="AIDI-Action.ctl" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/AIDI/Typedefs/AIDI-Action.ctl"/>
 			<Item Name="AIDI-Clear Tasks.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/AIDI/Sub VIs/AIDI-Clear Tasks.vi"/>
 			<Item Name="AIDI-Config.ctl" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/AIDI/Typedefs/AIDI-Config.ctl"/>
@@ -352,29 +405,20 @@
 			<Item Name="AODO-Write (AO).vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/AODO/Sub VIs/AODO-Write (AO).vi"/>
 			<Item Name="AODO-Write (DO).vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/AODO/Sub VIs/AODO-Write (DO).vi"/>
 			<Item Name="Append to Text File.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Append to Text File.vi"/>
-			<Item Name="Approx Equal (Scalar).vi" Type="VI" URL="../Utility VIs/Comparison VIs/Approx Equal (Scalar).vi"/>
-			<Item Name="Approx Equal.vi" Type="VI" URL="../Utility VIs/Comparison VIs/Approx Equal.vi"/>
 			<Item Name="Build Array Name.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Build Array Name.vi"/>
 			<Item Name="Build Line.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Build Line.vi"/>
+			<Item Name="Cal Mic Sensitivity (TDT).vi" Type="VI" URL="../LV Source/Cal Mic Sensitivity (TDT).vi"/>
+			<Item Name="Cal Validation.vi" Type="VI" URL="../LV Source/Cal Validation.vi"/>
 			<Item Name="CAL-Create Stimulus.vi" Type="VI" URL="../../Common VIs/Stimulus VIs/CAL-Create Stimulus.vi"/>
 			<Item Name="CAL-Data.ctl" Type="VI" URL="../../Common VIs/Typedefs/CAL-Data.ctl"/>
 			<Item Name="CAL-Endpoint.ctl" Type="VI" URL="../../Common VIs/Typedefs/CAL-Endpoint.ctl"/>
 			<Item Name="CAL-Globals.vi" Type="VI" URL="../../Common VIs/Typedefs/CAL-Globals.vi"/>
 			<Item Name="CAL-Interp.vi" Type="VI" URL="../../Common VIs/Analysis VIs/CAL-Interp.vi"/>
-			<Item Name="CAL-Load data.vi" Type="VI" URL="../LV Source/File IO VIs/CAL-Load data.vi"/>
 			<Item Name="CAL-Plot Data.vi" Type="VI" URL="../../Common VIs/Analysis VIs/CAL-Plot Data.vi"/>
-			<Item Name="CAL-Probe Tube Cal Path (speaker).vi" Type="VI" URL="../LV Source/File IO VIs/CAL-Probe Tube Cal Path (speaker).vi"/>
 			<Item Name="CAL-Read Data.vi" Type="VI" URL="../../Common VIs/File IO VIs/CAL-Read Data.vi"/>
 			<Item Name="CAL-Save Data.vim" Type="VI" URL="../../Common VIs/File IO VIs/CAL-Save Data.vim"/>
-			<Item Name="CAL-Speaker Cal Path.vi" Type="VI" URL="../LV Source/File IO VIs/CAL-Speaker Cal Path.vi"/>
 			<Item Name="CAL-Stimulus.ctl" Type="VI" URL="../../Common VIs/Typedefs/CAL-Stimulus.ctl"/>
-			<Item Name="Center Window on Parent.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Windows VIs/Center Window on Parent.vi"/>
-			<Item Name="CFTS-Experiment State.ctl" Type="VI" URL="../cfts/LV Source/CFTS Main Panel SubVIs/CFTS-Experiment State.ctl"/>
-			<Item Name="CFTS-Get Data Folder.vi" Type="VI" URL="../cfts/LV Source/CFTS Main Panel SubVIs/CFTS-Get Data Folder.vi"/>
-			<Item Name="CIE2T-Compute Max SPL.vi" Type="VI" URL="../LV Source/Analysis VIs/CIE2T-Compute Max SPL.vi"/>
-			<Item Name="CIE2T-Config.vi" Type="VI" URL="../LV Source/SubVIs/CIE2T-Config.vi"/>
-			<Item Name="CIE2T-Find Optimal Attenuation.vi" Type="VI" URL="../LV Source/SubVIs/CIE2T-Find Optimal Attenuation.vi"/>
-			<Item Name="CM-TDT-Endpoint To Sequential Connection Number (1D String).vi" Type="VI" URL="../epl-vi-lib/Connection VIs/TDT VIs/CM-TDT-Endpoint To Sequential Connection Number (1D String).vi"/>
+			<Item Name="Calibration Smoothing Tool.vi" Type="VI" URL="../LV Source/Calibration Smoothing Tool.vi"/>
 			<Item Name="Config File Path.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/System Info VIs/Config File Path.vi"/>
 			<Item Name="Create Directory Chain.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Create Directory Chain.vi"/>
 			<Item Name="Create Prism Color Map.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/Create Prism Color Map.vi"/>
@@ -385,13 +429,9 @@
 			<Item Name="Cxns-Get Connections File Path.vi" Type="VI" URL="../epl-vi-lib/Connection VIs/Sub VIs/Cxns-Get Connections File Path.vi"/>
 			<Item Name="DAQ-Stop All.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/DAQ-Stop All.vi"/>
 			<Item Name="DAQ-Sync and Start.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/DAQ-Sync and Start.vi"/>
-			<Item Name="dB to Linear (scalar).vi" Type="VI" URL="../epl-vi-lib/Utility VIs/Math VIs/dB to Linear (scalar).vi"/>
-			<Item Name="dB to Linear.vi" Type="VI" URL="../epl-vi-lib/Utility VIs/Math VIs/dB to Linear.vi"/>
 			<Item Name="dB, degrees to Z.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/dB, degrees to Z.vi"/>
 			<Item Name="DI-Output Spec.ctl" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/AIDI/Typedefs/DI-Output Spec.ctl"/>
 			<Item Name="DO-Output Spec.ctl" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/AODO/Typedefs/DO-Output Spec.ctl"/>
-			<Item Name="DP-Freqs.ctl" Type="VI" URL="../cfts/LV Source/DPOAE VIs/Typedefs/DP-Freqs.ctl"/>
-			<Item Name="Equip-Get AI Channels.vi" Type="VI" URL="../epl-vi-lib/Connection VIs/Equip-Get AI Channels.vi"/>
 			<Item Name="Equip-Get Device (TDT).vi" Type="VI" URL="../epl-vi-lib/Connection VIs/TDT VIs/Equip-Get Device (TDT).vi"/>
 			<Item Name="Error Description.ctl" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Error Handling VIs/Error Description.ctl"/>
 			<Item Name="Error Dialog.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Error Handling VIs/Error Dialog.vi"/>
@@ -402,12 +442,8 @@
 			<Item Name="FFT x(t) to dB,Degrees (1D).vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/FFT x(t) to dB,Degrees (1D).vi"/>
 			<Item Name="FFT x(t) to dB,Degrees (2D).vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/FFT x(t) to dB,Degrees (2D).vi"/>
 			<Item Name="FFT x(t) to dB,Degrees.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/FFT x(t) to dB,Degrees.vi"/>
-			<Item Name="FFTtoR,Theta (1D).VI" Type="VI" URL="../epl-vi-lib/Utility VIs/Math VIs/FFTtoR,Theta (1D).VI"/>
-			<Item Name="FFTtoR,Theta.VI" Type="VI" URL="../epl-vi-lib/Utility VIs/Math VIs/FFTtoR,Theta.VI"/>
 			<Item Name="FileIO-Create Backup.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/FileIO-Create Backup.vi"/>
 			<Item Name="FileIO-File or Folder Exists.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/FileIO-File or Folder Exists.vi"/>
-			<Item Name="FileIO-Open Dialog.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/FileIO-Open Dialog.vi"/>
-			<Item Name="Filter Error.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Error Handling VIs/Filter Error.vi"/>
 			<Item Name="Get Cluster Elements.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Get Cluster Elements.vi"/>
 			<Item Name="Get Type Info.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Get Type Info.vi"/>
 			<Item Name="Get Variant Attribute With Defaults.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Get Variant Attribute With Defaults.vi"/>
@@ -419,19 +455,17 @@
 			<Item Name="Graphics-Plot Properties.ctl" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Graphics VIs/Graphics-Plot Properties.ctl"/>
 			<Item Name="Graphics-Reorder Plots.vim" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Graphics VIs/Graphics-Reorder Plots.vim"/>
 			<Item Name="Graphics-Set Plot Properties.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Graphics VIs/Graphics-Set Plot Properties.vi"/>
-			<Item Name="Input sources.ctl" Type="VI" URL="../epl-vi-lib/Connection VIs/Type Defs/Input sources.ctl"/>
 			<Item Name="Insert Reserved Error.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Insert Reserved Error.vi"/>
 			<Item Name="interp1 (1D).vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/interp1 (1D).vi"/>
-			<Item Name="Interp1 (poly).vi" Type="VI" URL="../epl-vi-lib/Utility VIs/Math VIs/Interp1 (poly).vi"/>
 			<Item Name="interp1.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/interp1.vi"/>
-			<Item Name="KCheckmarkBoolean 2.ctl" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Buttons/KCheckmarkBoolean 2.ctl"/>
+			<Item Name="kernel32.dll" Type="Document" URL="kernel32.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 			<Item Name="KLegend.xctl" Type="XControl" URL="../../../epl-vi-lib/Utility VIs/Controls/KLegend/KLegend.xctl"/>
 			<Item Name="KObject.lvclass" Type="LVClass" URL="../../../epl-vi-lib/Koop/KObject Class/KObject.lvclass"/>
-			<Item Name="Left-Right ring.ctl" Type="VI" URL="../epl-vi-lib/Utility VIs/Type Defs/Left-Right ring.ctl"/>
 			<Item Name="LinSpace (start-stop-step).vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/LinSpace (start-stop-step).vi"/>
 			<Item Name="LinSpace (x0-dx-npts).vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/LinSpace (x0-dx-npts).vi"/>
 			<Item Name="LinSpace.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/LinSpace.vi"/>
-			<Item Name="Load Signal Bank 1.0.3 keh.vi" Type="VI" URL="../epl-vi-lib/PXI DAQ VIs/Top Level VIs/Load Signal Bank 1.0.3 keh.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="Math-dB To Linear.vim" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/Math-dB To Linear.vim"/>
 			<Item Name="Math-Linear to dB.vim" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/Math-Linear to dB.vim"/>
@@ -440,25 +474,17 @@
 			</Item>
 			<Item Name="Process Array Elements V2.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Process Array Elements V2.vi"/>
 			<Item Name="Process Array Elements.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Process Array Elements.vi"/>
-			<Item Name="PXI Attens to Multipliers (1D).vi" Type="VI" URL="../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/AO Gain and Multiplier VIs/PXI Attens to Multipliers (1D).vi"/>
-			<Item Name="PXI Globals.vi" Type="VI" URL="../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/PXI Globals.vi"/>
 			<Item Name="PXI Multipliers to AO Gains (1D).vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/AO Gain and Multiplier VIs/PXI Multipliers to AO Gains (1D).vi"/>
 			<Item Name="PXI Multipliers to AO Gains (scalar).vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/AO Gain and Multiplier VIs/PXI Multipliers to AO Gains (scalar).vi"/>
-			<Item Name="PXI Multipliers to AO Gains.vi" Type="VI" URL="../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/AO Gain and Multiplier VIs/PXI Multipliers to AO Gains.vi"/>
 			<Item Name="PXI-Compute Skip Samples.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/PXI-Compute Skip Samples.vi"/>
 			<Item Name="PXI-Connections File Path.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/Top Level VIs/PXI-Connections File Path.vi"/>
 			<Item Name="PXI-Find 1st 16-bit Board.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/PXI-Find 1st 16-bit Board.vi"/>
-			<Item Name="PXI-General Init.vi" Type="VI" URL="../epl-vi-lib/PXI DAQ VIs/Top Level VIs/PXI-General Init.vi"/>
 			<Item Name="PXI-Get Delays.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/PXI-Get Delays.vi"/>
 			<Item Name="PXI-Get Input Terminal Configuration.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/PXI-Get Input Terminal Configuration.vi"/>
 			<Item Name="PXI-Get Slot Number.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/Top Level VIs/PXI-Get Slot Number.vi"/>
 			<Item Name="PXI-Get Terminal Name with Device Prefix.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/PXI-Get Terminal Name with Device Prefix.vi"/>
 			<Item Name="PXI-Is Any Task 16-bit.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/PXI-Is Any Task 16-bit.vi"/>
 			<Item Name="PXI-Is Task 24-bit.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/PXI-Is Task 24-bit.vi"/>
-			<Item Name="PXI-Set AI Config.vi" Type="VI" URL="../epl-vi-lib/PXI DAQ VIs/Top Level VIs/Set Config VIs/PXI-Set AI Config.vi"/>
-			<Item Name="PXI-Set AO Config.vi" Type="VI" URL="../epl-vi-lib/PXI DAQ VIs/Top Level VIs/Set Config VIs/PXI-Set AO Config.vi"/>
-			<Item Name="PXI-Set AO Gains and Multipliers.vi" Type="VI" URL="../epl-vi-lib/PXI DAQ VIs/Top Level VIs/Set Config VIs/PXI-Set AO Gains and Multipliers.vi"/>
-			<Item Name="PXI-Set Auto Ramping.vi" Type="VI" URL="../epl-vi-lib/PXI DAQ VIs/Top Level VIs/Set Config VIs/PXI-Set Auto Ramping.vi"/>
 			<Item Name="PXI-Set Trigger Output.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/PXI-Set Trigger Output.vi"/>
 			<Item Name="PXI-Task to Device Properties.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/PXI-Task to Device Properties.vi"/>
 			<Item Name="PXI-Zero 16-bit Outputs (by device).vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/DAQ Engine VIs/PXI-Zero 16-bit Outputs (by device).vi"/>
@@ -468,26 +494,15 @@
 			<Item Name="Read Strings from File.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Read Strings from File.vi"/>
 			<Item Name="Read Write Options Cluster.ctl" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Read Write Options Cluster.ctl"/>
 			<Item Name="Replace Characters.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Replace Characters.vi"/>
-			<Item Name="Ring-Set nicely by string.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Controls/Ring-Set nicely by string.vi"/>
 			<Item Name="RWAE-Fix Name.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything Enhanced/RWAE-Fix Name.vi"/>
-			<Item Name="SGDA-Read Data.vi" Type="VI" URL="../epl-vi-lib/PXI DAQ VIs/Top Level VIs/SGDA VIs/SGDA-Read Data.vi"/>
-			<Item Name="SGDA-Start.vi" Type="VI" URL="../epl-vi-lib/PXI DAQ VIs/Top Level VIs/SGDA VIs/SGDA-Start.vi"/>
-			<Item Name="SGDA-Stop.vi" Type="VI" URL="../epl-vi-lib/PXI DAQ VIs/Top Level VIs/SGDA VIs/SGDA-Stop.vi"/>
 			<Item Name="Sort and Index (DBL).vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Array Manipulation VIs/Sort and Index (DBL).vi"/>
 			<Item Name="Sort and Index (I32).vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Array Manipulation VIs/Sort and Index (I32).vi"/>
 			<Item Name="Sort and Index (polymorphic).vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Array Manipulation VIs/Sort and Index (polymorphic).vi"/>
 			<Item Name="Sort and Index (string).vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Array Manipulation VIs/Sort and Index (string).vi"/>
-			<Item Name="Speaker ring.ctl" Type="VI" URL="../epl-vi-lib/Utility VIs/Type Defs/Speaker ring.ctl"/>
 			<Item Name="StrQueue-Set Event Case Timeout.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Snippets/StrQueue-Set Event Case Timeout.vi"/>
 			<Item Name="Suppress Error Code - Array.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Suppress Error Code - Array.vi"/>
 			<Item Name="Suppress Error Code - Scalar.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Suppress Error Code - Scalar.vi"/>
 			<Item Name="Suppress Error Code.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Suppress Error Code.vi"/>
-			<Item Name="TDT-Get Device Properties.vi" Type="VI" URL="../epl-vi-lib/PXI DAQ VIs/TDT VIs/TDT-Get Device Properties.vi"/>
-			<Item Name="TDT-Init ActiveX.vi" Type="VI" URL="../epl-vi-lib/PXI DAQ VIs/TDT VIs/TDT-Init ActiveX.vi"/>
-			<Item Name="TDT-Init DAQ (Npts).vi" Type="VI" URL="../PXI DAQ VIs/TDT VIs/TDT-Init DAQ (Npts).vi"/>
-			<Item Name="TDT-Signal Bank Action.ctl" Type="VI" URL="../epl-vi-lib/PXI DAQ VIs/TDT VIs/TDT-Signal Bank Action.ctl"/>
-			<Item Name="TDT-Stream AO.vi" Type="VI" URL="../epl-vi-lib/PXI DAQ VIs/TDT VIs/TDT-Stream AO.vi"/>
-			<Item Name="Tone-Create.vi" Type="VI" URL="../epl-vi-lib/Signal Synthesis VIs/Waveform VIs/Tone VIs/Tone-Create.vi"/>
 			<Item Name="Unprocess Array Elements.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Unprocess Array Elements.vi"/>
 			<Item Name="Unreplace Characters.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Unreplace Characters.vi"/>
 			<Item Name="Write Anything.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/Write Anything.vi"/>
