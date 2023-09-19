@@ -1,6 +1,6 @@
 ## Changelog
 
-### v1.2.0 (2023-08-31)
+### v1.2.0 (2023-09-19)
 
 #### Changed
 - updated in-ear calibration
