@@ -1,5 +1,13 @@
 ## Changelog
 
+### v1.2.1 (2023-10-13)
+
+#### Fixed
+- fixed bug in microphone sensitivity calibration where duration and Fs were assigned backwards
+- delete old data file before saving new one to avoid duplicate data
+
+---
+
 ### v1.2.0 (2023-09-19)
 
 #### Changed
