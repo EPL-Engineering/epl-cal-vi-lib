@@ -1,5 +1,13 @@
 ## Changelog
 
+### unreleased
+#### Fixed
+- fixed bug syncing measurements on 4461
+#### Changed
+- subtract mean before computing rms in microphone sensitivity calibration to account for dc offset
+
+---
+
 ### v1.2.1 (2023-10-13)
 
 #### Fixed
