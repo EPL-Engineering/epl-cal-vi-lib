@@ -1,8 +1,16 @@
 ## Changelog
 
-### v1.2.2 (2023-12-18)
+### v1.2.3 (2023-12-18)
 #### Fixed
 - freefield calibration error using USB board
+
+---
+
+### v1.2.2 (2023-10-13)
+#### Fixed
+- fixed bug syncing measurements on 4461
+#### Changed
+- subtract mean before computing rms in microphone sensitivity calibration to account for dc offset
 
 ---
 
