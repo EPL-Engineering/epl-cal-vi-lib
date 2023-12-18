@@ -4,6 +4,8 @@
 #### Fixed
 - freefield calibration error using USB board
 
+---
+
 ### v1.2.1 (2023-10-13)
 
 #### Fixed
