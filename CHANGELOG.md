@@ -1,5 +1,8 @@
 ## Changelog
 
+### Unreleased
+#### Fixed
+
 ### v1.2.2 (2023-11-20)
 
 #### Fixed
