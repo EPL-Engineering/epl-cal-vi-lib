@@ -6,7 +6,7 @@
 
 ---
 
-### v1.2.2 (2023-10-13)
+### v1.2.2 (2023-11-20)
 #### Fixed
 - fixed bug syncing measurements on 4461
 #### Changed
