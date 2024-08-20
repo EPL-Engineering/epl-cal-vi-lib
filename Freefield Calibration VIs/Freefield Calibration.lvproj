@@ -1,5 +1,8 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="20008000">
+	<Property Name="CCSymbols" Type="Str">HARDWARE,TDT;</Property>
+	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
+	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -13,6 +16,7 @@
 		<Item Name="LV Source" Type="Folder" URL="../LV Source">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="Cal Mic Sensitivity.vi" Type="VI" URL="../../Common VIs/Mic Sensitivity VIs/Cal Mic Sensitivity.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -344,9 +348,12 @@
 			<Item Name="AODO-Write (DO).vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/AODO/Sub VIs/AODO-Write (DO).vi"/>
 			<Item Name="Append to Text File.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Append to Text File.vi"/>
 			<Item Name="Array-Delete String and Parse Fields.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Array Manipulation VIs/Array-Delete String and Parse Fields.vi"/>
+			<Item Name="Array-Dimensions (2D string).vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Array Manipulation VIs/Array-Dimensions (2D string).vi"/>
+			<Item Name="Array-Dimensions (2D).vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Array Manipulation VIs/Array-Dimensions (2D).vi"/>
+			<Item Name="Array-Dimensions (3D).vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Array Manipulation VIs/Array-Dimensions (3D).vi"/>
+			<Item Name="Array-Dimensions.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Array Manipulation VIs/Array-Dimensions.vi"/>
 			<Item Name="Build Array Name.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Build Array Name.vi"/>
 			<Item Name="Build Line.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Build Line.vi"/>
-			<Item Name="Cal Mic Sensitivity.vi" Type="VI" URL="../../Common VIs/Mic Sensitivity VIs/Cal Mic Sensitivity.vi"/>
 			<Item Name="CAL-Create Stimulus.vi" Type="VI" URL="../../Common VIs/Stimulus VIs/CAL-Create Stimulus.vi"/>
 			<Item Name="CAL-Data.ctl" Type="VI" URL="../../Common VIs/Typedefs/CAL-Data.ctl"/>
 			<Item Name="CAL-Endpoint.ctl" Type="VI" URL="../../Common VIs/Typedefs/CAL-Endpoint.ctl"/>
@@ -363,6 +370,7 @@
 			<Item Name="CalMic-Main Menu.rtm" Type="Document" URL="../../Common VIs/Mic Sensitivity VIs/Sub VIs/CalMic-Main Menu.rtm"/>
 			<Item Name="CalMic-Params.ctl" Type="VI" URL="../../Common VIs/Mic Sensitivity VIs/Sub VIs/CalMic-Params.ctl"/>
 			<Item Name="CalMic-Restore Defaults.vi" Type="VI" URL="../../Common VIs/Mic Sensitivity VIs/Sub VIs/CalMic-Restore Defaults.vi"/>
+			<Item Name="CommonSig-Sin2 Ramp.vi" Type="VI" URL="../../../epl-vi-lib/Signal Synthesis VIs/4th Generation/Common/CommonSig-Sin2 Ramp.vi"/>
 			<Item Name="Config File Path.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/System Info VIs/Config File Path.vi"/>
 			<Item Name="Create Directory Chain.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Create Directory Chain.vi"/>
 			<Item Name="Create Prism Color Map.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/Create Prism Color Map.vi"/>
@@ -412,9 +420,11 @@
 			<Item Name="LinSpace.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/LinSpace.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="Math-dB To Linear.vim" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/Math-dB To Linear.vim"/>
+			<Item Name="Math-Divide By 1000.vim" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/Math-Divide By 1000.vim"/>
 			<Item Name="Math-Interp1.vim" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/Math-Interp1.vim"/>
 			<Item Name="Math-Linear to dB.vim" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/Math-Linear to dB.vim"/>
 			<Item Name="Math-Subtract Mean.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/Math-Subtract Mean.vi"/>
+			<Item Name="Math-X1000.vim" Type="VI" URL="../../../epl-vi-lib/Utility VIs/Math VIs/Math-X1000.vim"/>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -449,11 +459,78 @@
 			<Item Name="Suppress Error Code - Array.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Suppress Error Code - Array.vi"/>
 			<Item Name="Suppress Error Code - Scalar.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Suppress Error Code - Scalar.vi"/>
 			<Item Name="Suppress Error Code.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Suppress Error Code.vi"/>
+			<Item Name="TDT-Coerce Sampling Rate.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/TDT VIs/TDT-Coerce Sampling Rate.vi"/>
+			<Item Name="TDT-Connect ZBUS.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/TDT VIs/TDT-Connect ZBUS.vi"/>
+			<Item Name="TDT-Device ID.ctl" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/TDT VIs/Typedefs/TDT-Device ID.ctl"/>
+			<Item Name="TDT-Enumerate Channels.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/TDT VIs/TDT-Enumerate Channels.vi"/>
+			<Item Name="TDT-Enumerate Devices.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/TDT VIs/TDT-Enumerate Devices.vi"/>
+			<Item Name="TDT-Globals.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/TDT VIs/TDT-Globals.vi"/>
+			<Item Name="TDT-Halt.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/TDT VIs/TDT-Halt.vi"/>
+			<Item Name="TDT-Init RPcoX.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/TDT VIs/TDT-Init RPcoX.vi"/>
+			<Item Name="TDT-Output source.ctl" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/TDT VIs/Typedefs/TDT-Output source.ctl"/>
+			<Item Name="TDT-Run Circuit.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/TDT VIs/TDT-Run Circuit.vi"/>
+			<Item Name="TDT-Sampling Rate to LoadCOFsf Input.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/TDT VIs/TDT-Sampling Rate to LoadCOFsf Input.vi"/>
+			<Item Name="TDT-Signal Bank Action.ctl" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/TDT VIs/TDT-Signal Bank Action.ctl"/>
+			<Item Name="TDT-Stream AI.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/TDT VIs/TDT-Stream AI.vi"/>
+			<Item Name="TDT-Stream AO.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/TDT VIs/TDT-Stream AO.vi"/>
+			<Item Name="TDT-Wait For AI Buffer Space.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/TDT VIs/TDT-Wait For AI Buffer Space.vi"/>
+			<Item Name="TDT-Wait For Buffer Space.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/TDT VIs/TDT-Wait For Buffer Space.vi"/>
+			<Item Name="TDT-Write AO.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/TDT VIs/TDT-Write AO.vi"/>
+			<Item Name="TDT-Write Tag.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/TDT VIs/TDT-Write Tag.vi"/>
+			<Item Name="TDT-zBusTrig.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/TDT VIs/TDT-zBusTrig.vi"/>
+			<Item Name="TDTRX6-Read Input Buffers.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/TDT VIs/Deprecated/TDTRX6-Read Input Buffers.vi"/>
 			<Item Name="Unprocess Array Elements.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Unprocess Array Elements.vi"/>
 			<Item Name="Unreplace Characters.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Unreplace Characters.vi"/>
 			<Item Name="Write Anything.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/Write Anything.vi"/>
 			<Item Name="Write Strings to File.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Write Strings to File.vi"/>
 		</Item>
-		<Item Name="Build Specifications" Type="Build"/>
+		<Item Name="Build Specifications" Type="Build">
+			<Item Name="Freefield Cal (TDT)" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{9FE74894-9D02-4B47-BD89-9B61A689BDA8}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{D5ADDAB0-33F2-4D45-829F-9E6FC8018C81}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_serverType" Type="Int">0</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{F12FDF2A-71CE-4DA9-8642-3552C0C27909}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Freefield Cal (TDT)</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../Build</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{8C4CF616-625F-41E9-A02B-6BC649A4FD5A}</Property>
+				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">FreefieldCalTDT.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../Build/FreefieldCalTDT.exe</Property>
+				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../Build</Property>
+				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{F7776F6D-D9E7-4EE4-809A-6FC5F55448D0}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/LV Source/Freefield Calibration (TDT).vi</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Cal Mic Sensitivity.vi</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[2].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">3</Property>
+				<Property Name="TgtF_companyName" Type="Str">Mass General Brigham</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Freefield Cal (TDT)</Property>
+				<Property Name="TgtF_internalName" Type="Str">Freefield Cal (TDT)</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2024 Mass General Brigham</Property>
+				<Property Name="TgtF_productName" Type="Str">Freefield Cal (TDT)</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{91850252-FBC6-4BBE-99A4-F36732FDB10A}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">FreefieldCalTDT.exe</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			</Item>
+		</Item>
 	</Item>
 </Project>
