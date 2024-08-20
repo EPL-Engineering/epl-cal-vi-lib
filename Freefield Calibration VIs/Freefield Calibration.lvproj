@@ -477,7 +477,6 @@
 			<Item Name="TDT-Wait For Buffer Space.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/TDT VIs/TDT-Wait For Buffer Space.vi"/>
 			<Item Name="TDT-Write AO.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/TDT VIs/TDT-Write AO.vi"/>
 			<Item Name="TDT-Write Tag.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/TDT VIs/TDT-Write Tag.vi"/>
-			<Item Name="TDT-zBusTrig.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/TDT VIs/TDT-zBusTrig.vi"/>
 			<Item Name="TDTRX6-Read Input Buffers.vi" Type="VI" URL="../../../epl-vi-lib/PXI DAQ VIs/TDT VIs/Deprecated/TDTRX6-Read Input Buffers.vi"/>
 			<Item Name="Unprocess Array Elements.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Unprocess Array Elements.vi"/>
 			<Item Name="Unreplace Characters.vi" Type="VI" URL="../../../epl-vi-lib/Utility VIs/File IO VIs/Read Write Anything/SubVIs/Unreplace Characters.vi"/>
