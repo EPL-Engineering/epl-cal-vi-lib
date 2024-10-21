@@ -1,3 +1,4 @@
 /Freefield Calibration VIs/Build
 /Freefield Calibration VIs/Installer/Output
-*.aliases
+/*.aliases
+/Freefield Calibration VIs/*.aliases
