@@ -1,5 +1,11 @@
 ## Changelog
 
+### v1.3 (2025-01-29)
+#### Added
+- TDT freefield calibration
+
+---
+
 ### v1.2.3 (2023-12-18)
 #### Fixed
 - freefield calibration error using USB board
