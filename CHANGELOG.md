@@ -1,5 +1,12 @@
 ## Changelog
 
+### v1.4 (2025-02-11)
+#### Fixed
+- CAL-Get Max SPL: set default Vmax to 10, specify frequency in Hz
+- gave Probe Tube Calibration proper shakedown
+
+---
+
 ### v1.3 (2025-01-29)
 #### Added
 - TDT freefield calibration
