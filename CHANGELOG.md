@@ -1,5 +1,11 @@
 ## Changelog
 
+### v1.5 (2026-07-30)
+#### Added
+- analysis VI to convert from dBSPL to dB HL
+
+---
+
 ### v1.4 (2025-02-11)
 #### Fixed
 - CAL-Get Max SPL: set default Vmax to 10, specify frequency in Hz
