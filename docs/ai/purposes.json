@@ -1,0 +1,1047 @@
+{
+"Common VIs/Analysis VIs/CAL-Apply ANSI RETSPL Values.vi": {
+"p": "Subtracts interpolated ANSI RETSPL values (chosen by `Speaker`) from an ASTF magnitude curve; errors for an unrecognised speaker.",
+"src": "derived",
+"blob": "45501e8cee503ebd57a78dcf6bac253d1250d3e3"
+},
+"Common VIs/Analysis VIs/CAL-Apply Microphone Correction.vi": {
+"p": "Reads a correction-curve text file, interpolates it with CAL-Interp and subtracts it from a CAL-Data magnitude/phase curve.",
+"src": "derived",
+"blob": "b3145c1e6b6401c476007f7d45fdb84c91f5df45"
+},
+"Common VIs/Analysis VIs/CAL-Compute Group Delay.vi": {
+"p": "Loads a calibration file, unwraps its phase and fits a line to phase vs frequency to return group delay in ms.",
+"src": "derived",
+"blob": "22bd062d8cd46e4a6274c2c4df6d9c0027fe1c80"
+},
+"Common VIs/Analysis VIs/CAL-Get Max SPL.vi": {
+"p": "Reads a speaker calibration file (CAL-Read Data) and interpolates it at the requested frequencies to return max SPL per frequency, adding a dB term computed from the front-panel `VDAC` value.",
+"src": "derived",
+"blob": "3d4278da1fda6c7bc6c50b98c1594a96e416f27c"
+},
+"Common VIs/Analysis VIs/CAL-Interp (Fs, Npts).vi": {
+"p": "Interpolates a calibration curve (dB magnitude, phase) onto the FFT grid defined by Fs and Npts; also returns the complex spectrum.",
+"src": "derived",
+"blob": "b24ee2aa3ee5db2e5b3e9ca46afb65f661d105d6"
+},
+"Common VIs/Analysis VIs/CAL-Interp.vi": {
+"p": "Interpolates a calibration curve (dB magnitude, phase) onto a uniform grid of spacing `df`; also returns the complex spectrum.",
+"src": "derived",
+"blob": "5ebb480e64f964ff3ed6eab84cb81eac3f8e4c34"
+},
+"Common VIs/Analysis VIs/CAL-Plot Data.vi": {
+"p": "Reads a calibration file and adds it as a colour-mapped plot to a magnitude graph (by refnum) at a given plot index.",
+"src": "derived",
+"blob": "e6fd3a64772171b494e6bcb3acb41861c4570949"
+},
+"Common VIs/Analysis VIs/CAL-SPL to V Interp.vi": {
+"p": "Loads a calibration file and interpolates it at `Fi` to return the voltage amplitude and phase (cycles) that produce a requested dB SPL.",
+"src": "derived",
+"blob": "d7a565fafeb499591c5d8b51638691b655b2176f"
+},
+"Common VIs/Analysis VIs/CAL-Smooth.vi": {
+"p": "Smooths a magnitude array with a Savitzky-Golay filter.",
+"src": "derived",
+"blob": "c24d4eb3578b3b2c85532104d539f1c399a68382"
+},
+"Common VIs/Analysis VIs/CIE2T-Compute Max SPL.vi": {
+"p": "Computes max SPL for two tones (f1, f2) from an FFT magnitude spectrum, probe-mic gain, attenuation and the named acoustic system's calibration file.",
+"src": "derived",
+"blob": "32f0c28764a77a83dd276e545fcf5cda6629d2ed"
+},
+"Common VIs/Analysis VIs/Compute Peak SPL.vi": {
+"p": "Synthesises a Waveform Class object, applies a speaker calibration in the frequency domain (FFT, multiply, inverse FFT) and returns the peak SPL.",
+"src": "derived",
+"blob": "e4a509fbcf71eac5c772327b441591cd2a94918a"
+},
+"Common VIs/File IO VIs/CAL-Read Data.vi": {
+"p": "Parses a calibration text file (regex header parsing) into frequency, magnitude and phase arrays plus Fs. This is the existing `.calib` reader.",
+"src": "derived",
+"blob": "ffb7872f45fed0092e8445aa8a309eaa81241569"
+},
+"Common VIs/File IO VIs/CAL-Save Data V2.vi": {
+"p": "Writes a calibration file (magnitude, phase, frequency, unsmoothed magnitude, smoothing and stimulus parameters, probe-tube file) with a version/date header, backing up any existing file first.",
+"src": "derived",
+"blob": "486d2c40497e7358f8f058c59d9c767c695148f5"
+},
+"Common VIs/File IO VIs/CAL-Save Data.vi": {
+"p": "Writes CAL-Data plus stimulus and response parameters to a calibration text file, after creating a backup.",
+"src": "derived",
+"blob": "61d0fa92000ff548fff55e3b0620fe92da0a9d87"
+},
+"Common VIs/File IO VIs/CAL-Save Data.vim": {
+"p": "Malleable variant of CAL-Save Data: `Response` is a variant; deletes an existing file so formats do not clash, with optional backup.",
+"src": "derived",
+"blob": "3dfe48bf3add2e659383ec4617fa80560f8fbcf4"
+},
+"Common VIs/File IO VIs/CAL-Save Smoothed.vi": {
+"p": "Rewrites an existing calibration file with smoothed magnitudes and the smoothing parameters, parsing the old file by regex.",
+"src": "derived",
+"blob": "4e908b43b1015de4f5eac558fceffb6cbdae4f62"
+},
+"Common VIs/File IO VIs/CAL-Update Value.vi": {
+"p": "Loads a calibration file, replaces the magnitude at the two bins bracketing a frequency with a ceiling value, and re-saves it.",
+"src": "comment",
+"blob": "efe94efd8c48bc26b5b9ae3333ad6935cf88402c"
+},
+"Common VIs/Inverse Filter VIs/Apply Audiogram Compensation.vi": {
+"p": "FFTs a noise buffer, adds interpolated audiogram compensation between the file's min and max frequencies (zero elsewhere) and inverse-FFTs; returns the noise and reference adjustment.",
+"src": "comment",
+"blob": "3ab59224717244f172e327c11caae3621431a777"
+},
+"Common VIs/Inverse Filter VIs/Audiogram-Read File.vi": {
+"p": "Reads an audiogram text file into frequency and magnitude arrays plus min/max frequency and minimum-threshold summaries.",
+"src": "derived",
+"blob": "002c2ba780a9922605a1e33bc9e9a75cb48a0092"
+},
+"Common VIs/Inverse Filter VIs/Design Inverse Filter.vi": {
+"p": "Interactive (event-loop) VI that builds a masker noise from a calibration file and stimulus/masker specs and shows its spectrum, RMS and max level.",
+"src": "derived",
+"blob": "f3921b04c121d12551f7efd92d8bc895e5cf514d"
+},
+"Common VIs/Inverse Filter VIs/IFNoise-Analyze.vi": {
+"p": "Takes the newest mic buffer from the Data Available queue, windows and FFTs it, and accumulates magnitude/SPL sums in the IFNoise runtime cluster.",
+"src": "derived",
+"blob": "8f386d4718ab008f03247e7b045e2476b8d29067"
+},
+"Common VIs/Inverse Filter VIs/IFNoise-Create Stimulus.vi": {
+"p": "Generates uniform white noise and, when `Inverse Filter` is true, shapes it with InvFilter-Create Noise from the calibration file; returns noise, magnitude spectrum and max SPL.",
+"src": "derived",
+"blob": "d79beb5f7e7b49453b72b7a948b3fc23d599179b"
+},
+"Common VIs/Inverse Filter VIs/IFNoise-Init Hardware.vi": {
+"p": "Initialises PXI DAQ for noise play/record: resolves AO/AI channels for the speaker and input source, sets AI/AO config and gains from attenuation, loads the signal bank.",
+"src": "derived",
+"blob": "19b193ac8c40b472951933dbd1867572c5ad0034"
+},
+"Common VIs/Inverse Filter VIs/IFNoise-Initialize.vi": {
+"p": "Builds the IFNoise runtime: resolves speaker and probe-tube calibration paths from experiment state, loads and interpolates them, creates the stimulus and initialises hardware.",
+"src": "derived",
+"blob": "8f27a3b277dfb6fe11811bc25fc9bc494b595afd"
+},
+"Common VIs/Inverse Filter VIs/IFNoise-Plot.vi": {
+"p": "Converts IFNoise runtime sums into averaged magnitude spectra, a time-waveform cluster and an overall dB SPL value for display.",
+"src": "derived",
+"blob": "ee0991feda80bccac55ac06a701cb703e725a522"
+},
+"Common VIs/Inverse Filter VIs/IFNoise-Update AO.vi": {
+"p": "Loads the next circular noise segment (Noise-Circular Play) into the AO signal bank.",
+"src": "derived",
+"blob": "1e6c46b58e10a1373d6706825a962141dedef034"
+},
+"Common VIs/Inverse Filter VIs/InvFilter-Check Parameters.vi": {
+"p": "Checks InvFilt-Params with a single divide/greater-than test and returns an error cluster when it fails.",
+"src": "derived",
+"blob": "d4132280dd65ab4033f119d575dc78e2f5febd04"
+},
+"Common VIs/Inverse Filter VIs/InvFilter-Create Noise.vi": {
+"p": "Makes inverse-filtered noise: generates white noise (uniform or Gaussian, with a `seed` input) or takes `Noise In`, subtracts the calibration-derived spectrum in dB via FFT/inverse FFT; returns noise, max level and spectrum.",
+"src": "derived",
+"blob": "c708da4d7c2cfab54b867700c613e3af98dce58d"
+},
+"Common VIs/Inverse Filter VIs/InvFilter-Create Spectrum.vi": {
+"p": "Loads a calibration file, interpolates it to the (Fs, Npts) grid and builds the inverse-filter magnitude/phase between Fmin and Fmax (optional brickwall); returns a reference level.",
+"src": "derived",
+"blob": "8944353f1c522293319a752d415324bc3b3d814d"
+},
+"Common VIs/Inverse Filter VIs/InvFilter-Design.vi": {
+"p": "Builds the inverse-filter spectrum from a calibration file and InvFilt-Params and returns its impulse response by inverse FFT.",
+"src": "derived",
+"blob": "72147cb552086d16a18022b06231aaaf1b0db6e7"
+},
+"Common VIs/Mic Sensitivity VIs/Cal Mic Sensitivity.vi": {
+"p": "Top-level UI VI (UI loop + measurement loop) that measures calibration-microphone sensitivity for a device and returns it.",
+"src": "derived",
+"blob": "cfe63cf0d2ae5100eb211af2cf087cb896e6bdb7"
+},
+"Common VIs/Mic Sensitivity VIs/Sub VIs/CalMic-Initialize Hardware.vi": {
+"p": "Initialises TDT hardware (RPcoX circuit, coerced sampling rate, channel tags) for the mic-sensitivity measurement.",
+"src": "derived",
+"blob": "bd907290aa9d0757284a6df82fa04ed7f6a2142a"
+},
+"Common VIs/Mic Sensitivity VIs/Sub VIs/CalMic-Load Calibration Log.vi": {
+"p": "Reads the calibration log text file into a 2-D string table and returns the last logged value.",
+"src": "derived",
+"blob": "c57418702a293784bc28adbe2552b4c2aa0825ec"
+},
+"Common VIs/Mic Sensitivity VIs/Sub VIs/CalMic-Restore Defaults.vi": {
+"p": "Reads saved CalMic-Params from a config file (Read Anything).",
+"src": "derived",
+"blob": "4d694e35a73faa052364c43f165d47cb4d2feb39"
+},
+"Common VIs/Stimulus VIs/CAL-Create Stimulus.vi": {
+"p": "Creates the calibration chirp: flat magnitude between Fmin and Fmax with Schroeder-style phase, built by inverse FFT.",
+"src": "comment",
+"blob": "9fa994a4da005bc9ecdb1f53bbe5b0d5610029d2"
+},
+"Common VIs/Typedefs/CAL-Globals.vi": {
+"p": "No connector pane and no diagram operations in lvkit output (consistent with a global-variable VI).",
+"src": "derived",
+"blob": "135a636cd3acc98331ea4249aa94cf3aa01c3ace"
+},
+"Freefield Calibration VIs/LV Source/Freefield Calibration (TDT).vi": {
+"p": "Top-level free-field speaker calibration application, TDT hardware version (UI thread + measurement thread).",
+"src": "derived",
+"blob": "d36c0be322c3398815fb8d925c53ca447e42dfc8"
+},
+"Freefield Calibration VIs/LV Source/Freefield Calibration.vi": {
+"p": "Top-level free-field speaker calibration application (UI thread + measurement thread).",
+"src": "derived",
+"blob": "37a438b33454cc1bb2d9af4d147363d8be07076e"
+},
+"Freefield Calibration VIs/LV Source/SubVIs/Freefield-Compute ASTF.vi": {
+"p": "Computes the free-field acoustic system transfer function from stimulus and mic response (FFT, subtract, gain/sensitivity correction, optional mic calibration and smoothing).",
+"src": "comment",
+"blob": "f4e9e0fc72e60effecf1f1f620b3b99e65cac09e"
+},
+"Freefield Calibration VIs/LV Source/SubVIs/Freefield-Default Arguments.vi": {
+"p": "Builds default Folder / Endpoints / Mic device arguments from the system directory and enumerated TDT devices and channels.",
+"src": "derived",
+"blob": "3ab38d371aa65b11a717df76ce5fef1654cbc0a0"
+},
+"Freefield Calibration VIs/LV Source/SubVIs/Freefield-Initialize Measurement (TDT).vi": {
+"p": "Creates the calibration stimulus and configures TDT streaming AO/AI for one endpoint and mic; returns RPcoX ref, stimulus, averaging buffer, dt and df.",
+"src": "derived",
+"blob": "4c4b48eaa554cc086a49bc080535161618f3c0c7"
+},
+"Freefield Calibration VIs/LV Source/SubVIs/Freefield-Initialize Measurement.vi": {
+"p": "Creates the calibration stimulus and configures NI AO (AODO-Configure AO) and AI (AIDI-Configure AI); returns stimulus, zeroed averaging buffer, dt and df.",
+"src": "derived",
+"blob": "cb462dad73f40b7fdc9816836a27869dec4477ce"
+},
+"Freefield Calibration VIs/LV Source/SubVIs/Freefield-Restore Defaults.vi": {
+"p": "Reads FF-Parameters from the config file (Read Anything).",
+"src": "derived",
+"blob": "6a50643aaf686fe90d9d7e74f6c3e988af855240"
+},
+"Freefield Calibration VIs/LV Source/SubVIs/Freefield-Show all.vi": {
+"p": "Loops over entries taken from a graph/control property and plots each one's calibration file on the magnitude and phase graphs with CAL-Plot Data.",
+"src": "derived",
+"blob": "aea09f0e3dd5c604512d3fd7680f5d0781be5b1f"
+},
+"HRTF VIs/LV Source/HRTF Measurement.vi": {
+"p": "Top-level HRTF measurement application (UI thread + state-machine measurement thread).",
+"src": "derived",
+"blob": "71c0854ab515f9e9936ef2e415ca5d00c1848411"
+},
+"HRTF VIs/LV Source/HRTF-Build.vi": {
+"p": "Build script: sets the project version and runs the application builder with a progress bar, then a system command.",
+"src": "derived",
+"blob": "b565418b6896c3d6fb97b9908f5cfb4c19de7006"
+},
+"HRTF VIs/LV Source/HRTF-Launcher.vi": {
+"p": "Launcher/splash: shows version, starts the executable and waits for it to be ready.",
+"src": "derived",
+"blob": "98cd1c5f6d831195ab032b99cc572a8f7a50d276"
+},
+"HRTF VIs/LV Source/SubVIs/HRTF-About Box.vi": {
+"p": "About dialog showing file and version information.",
+"src": "derived",
+"blob": "d2e1b6ef95641a35cdaa9f69e5a5af76f6830e51"
+},
+"HRTF VIs/LV Source/SubVIs/HRTF-Add Filestem to Ring.vi": {
+"p": "Adds a filestem to a ring control's strings if absent, keeping them sorted with HRTF-Sort Filestems.",
+"src": "derived",
+"blob": "70441c229ce64b1d71f1656ebf9778e8b4768539"
+},
+"HRTF VIs/LV Source/SubVIs/HRTF-Apply Window.vi": {
+"p": "Applies a Hanning window of given length and centre to a complex spectrum in the time domain (inverse FFT, window, FFT).",
+"src": "derived",
+"blob": "ddab752caa7d1e85be0815ab724e233bbd7319af"
+},
+"HRTF VIs/LV Source/SubVIs/HRTF-Build Filename.vi": {
+"p": "Builds the data-file path and filestem from HRTF state and mic laterality.",
+"src": "derived",
+"blob": "0efc2eba8992f501f34a123df4c56fe84fd452a9"
+},
+"HRTF VIs/LV Source/SubVIs/HRTF-Build Matfile Path.vi": {
+"p": "Builds the MAT-file path and filestem from HRTF state and laterality.",
+"src": "derived",
+"blob": "444b3d8b68b2da795370df81ffcf156c3d54b506"
+},
+"HRTF VIs/LV Source/SubVIs/HRTF-Compute HRTF.vi": {
+"p": "Reads ear and speaker-only work files, windows them, divides their spectra, resamples to the desired Fs and writes the HRTF to a MAT file with backup.",
+"src": "derived",
+"blob": "d0313ca650f958143ff9a579309bcb812c567aef"
+},
+"HRTF VIs/LV Source/SubVIs/HRTF-Compute HRTFs.vi": {
+"p": "Loops over the data files in the state folder and computes an HRTF for each, updating a progress indicator.",
+"src": "derived",
+"blob": "ff1ecce1c57c0c9d25a0c5b290fe1b9fdb00a0bf"
+},
+"HRTF VIs/LV Source/SubVIs/HRTF-Configure Hardware (NI).vi": {
+"p": "Creates the HRTF stimulus and configures NI PXI AO/AI channels and gains; returns stimulus, sample rate, points per rep and reps per frame.",
+"src": "derived",
+"blob": "062f0e45e7ed27e68370198eb7b0ec78b7a31843"
+},
+"HRTF VIs/LV Source/SubVIs/HRTF-Configure Hardware (TDT).vi": {
+"p": "Creates the HRTF stimulus and configures TDT hardware from the saved device config; returns stimulus, sample rate, points per rep and reps per frame.",
+"src": "derived",
+"blob": "314d85e7502236a6793f620a48618f195be591bc"
+},
+"HRTF VIs/LV Source/SubVIs/HRTF-Copy Speaker Only Data.vi": {
+"p": "Copies speaker-only data files from one folder to another, creating the folder and erroring if the source is missing.",
+"src": "derived",
+"blob": "90c7a1c7ee11b0c7699ca4aa32fd4b77431ca0ef"
+},
+"HRTF VIs/LV Source/SubVIs/HRTF-Create Stimulus.vi": {
+"p": "Creates the HRTF stimulus (chirp via ACal-Create Chirp or a binary sequence) and returns it with time, autocorrelation, magnitude and phase plots and its duration.",
+"src": "derived",
+"blob": "fae65b125498a5775af5baa6e750d5106621e6b8"
+},
+"HRTF VIs/LV Source/SubVIs/HRTF-Devices Dialog (TDT).vi": {
+"p": "Dialog for editing the input/output device tables stored in the connections file.",
+"src": "derived",
+"blob": "91ac50857ece835dc3997ed6bbeef0f4ef171257"
+},
+"HRTF VIs/LV Source/SubVIs/HRTF-Enum Data Files.vi": {
+"p": "Checks which data (or HRTF) files exist for each azimuth; returns filestems and a Boolean status matrix.",
+"src": "derived",
+"blob": "b2368753e697f6ca14f90611967fc270304d4505"
+},
+"HRTF VIs/LV Source/SubVIs/HRTF-Options Dialog.vi": {
+"p": "Dialog for editing HRTF-Options (root folder, elevations, wait).",
+"src": "derived",
+"blob": "fcc5b1ae8fdfd9209341853bb138e69bcc8d90d8"
+},
+"HRTF VIs/LV Source/SubVIs/HRTF-Plot Response.vi": {
+"p": "Builds time, cross-correlation, magnitude and phase plot clusters from the HRTF runtime data.",
+"src": "derived",
+"blob": "7ddadda4987c687f43c5c460055c4740eee9f6ac"
+},
+"HRTF VIs/LV Source/SubVIs/HRTF-Process Frame.vi": {
+"p": "Adds an acquired AI frame into the running mic sum and reports `Finished` and a status string.",
+"src": "derived",
+"blob": "0cfdfd0e7e5b460a864c1f69da31a0af85b1e6b0"
+},
+"HRTF VIs/LV Source/SubVIs/HRTF-Read HRTF Matfile.vi": {
+"p": "Reads an HRTF MAT file into the HRTF-filt cluster.",
+"src": "derived",
+"blob": "7c2daf6dae9cb12c1879968fa8c409c256147c42"
+},
+"HRTF VIs/LV Source/SubVIs/HRTF-Read HRTFs.vi": {
+"p": "Reads the HRTF MAT file for a filestem and returns impulse-response, magnitude and phase plots.",
+"src": "derived",
+"blob": "9b804a75a0c68fe3ba643541fa1f65e5bfc4b180"
+},
+"HRTF VIs/LV Source/SubVIs/HRTF-Read Response.vi": {
+"p": "Reads the saved response for a filestem (Read Anything) and returns time, cross-correlation, magnitude and phase plots.",
+"src": "derived",
+"blob": "01364019e5b8d60fed5a742fe5811bf7f9f427ae"
+},
+"HRTF VIs/LV Source/SubVIs/HRTF-Read Responses.vi": {
+"p": "Reads saved responses for a filestem via HRTF-Read Work and returns time, cross-correlation, magnitude and phase plots; errors on missing or empty data.",
+"src": "derived",
+"blob": "d3ffa2a4a346148fe33390c1396acb442dcf416d"
+},
+"HRTF VIs/LV Source/SubVIs/HRTF-Read Work.vi": {
+"p": "Reads Params and Result (Stimulus, Response) from an HRTF work file (Read Anything twice).",
+"src": "derived",
+"blob": "302593982e0f8bf101ff3dfe2511860043b0172a"
+},
+"HRTF VIs/LV Source/SubVIs/HRTF-Register Control Events.vi": {
+"p": "Registers for the HRTF Config XControl's user events (Mic change, Selection change).",
+"src": "derived",
+"blob": "1b3d8d2ab595f486cbfdd261266d8329a4c6df65"
+},
+"HRTF VIs/LV Source/SubVIs/HRTF-Register Device Dialog Events.vi": {
+"p": "Registers for user events from two controls used by the devices dialog.",
+"src": "derived",
+"blob": "1abccfa4c13278c6d95d3977bceed5e2c23defe6"
+},
+"HRTF VIs/LV Source/SubVIs/HRTF-Set Multiplexer (TDT).vi": {
+"p": "Computes multiplexer words from the azimuth index and writes them to TDT RX6 tags.",
+"src": "derived",
+"blob": "d51909b3711f5606e88e3b4a015de602ad8335f6"
+},
+"HRTF VIs/LV Source/SubVIs/HRTF-Sort Filestems.vi": {
+"p": "Sorts filestems by a number parsed out of each name with a regex.",
+"src": "derived",
+"blob": "930119cd8e303060b37e74e8517920947eb3bf6a"
+},
+"HRTF VIs/LV Source/SubVIs/HRTF-Write Text File.vi": {
+"p": "Writes parameters, stimulus and data to HRTF data files (one per selected mic), backing up existing files.",
+"src": "derived",
+"blob": "437573c0bd158309a143a71bc83148bf52c7575e"
+},
+"HRTF VIs/LV Source/Test VIs/Test HRTF Computation.vi": {
+"p": "Test VI: reads work files and runs the window / spectral-division / resample steps of the HRTF computation for plotting.",
+"src": "derived",
+"blob": "90e8499299549f47de73016634ec7c02bfea0744"
+},
+"HRTF VIs/LV Source/Test VIs/Test HRTF XControl.vi": {
+"p": "Test harness for the HRTF Config XControl (properties, events, flashing).",
+"src": "derived",
+"blob": "15e10ac3910c80a997f65276725845cb5eb996d5"
+},
+"HRTF VIs/LV Source/Test VIs/Test Multiplexing.vi": {
+"p": "Test VI that writes and reads TDT multiplexer tag values.",
+"src": "derived",
+"blob": "e5e3cbb5a6d574f45a3722bf7fe5c39bc9cd4c52"
+},
+"HRTF VIs/LV Source/Test VIs/Test Upsampling.vi": {
+"p": "Test VI: generates a sine, resamples it with Rational Resample and plots both.",
+"src": "derived",
+"blob": "d219bc08b77a9873e4ba5588559c99d92fd3b92f"
+},
+"HRTF VIs/LV Source/Typedefs/Flasher.vi": {
+"p": "Loop that toggles a control property via its reference until a notifier fires, then closes the reference.",
+"src": "derived",
+"blob": "509110763e3844287dd97f25711fce9be8aa494d"
+},
+"HRTF VIs/LV Source/Typedefs/HRTF Config/Check Size.vi": {
+"p": "Computes the minimum control width and height from the XControl state and picture size.",
+"src": "derived",
+"blob": "0593011e0ba3ab75fbd74491f27ad12b13b29f0a"
+},
+"HRTF VIs/LV Source/Typedefs/HRTF Config/Compute Layout.vi": {
+"p": "Computes the speaker-ring layout (positions by sine/cosine, mics) and the picture and control sizes.",
+"src": "derived",
+"blob": "4d86ee3d222d9208aaace8b969a7aaac0949a32f"
+},
+"HRTF VIs/LV Source/Typedefs/HRTF Config/Create Events.vi": {
+"p": "Creates the two user events (Mic change, Selection change) and returns them as an Events cluster.",
+"src": "derived",
+"blob": "26663504d0d764d4e508fadb477ee2ca512a9ead"
+},
+"HRTF VIs/LV Source/Typedefs/HRTF Config/Draw Background.vi": {
+"p": "Draws the background (radial lines) for the speaker ring into a picture.",
+"src": "derived",
+"blob": "c90488bea12e48ab91a58fb386526bfabab366a8"
+},
+"HRTF VIs/LV Source/Typedefs/HRTF Config/Draw Mic.vi": {
+"p": "Draws one microphone marker (rectangle), highlighted when selected.",
+"src": "derived",
+"blob": "17b2324fc6c0f6f5db0912a8d306f99ca959e603"
+},
+"HRTF VIs/LV Source/Typedefs/HRTF Config/Draw Microphones.vi": {
+"p": "Draws all microphone markers by calling Draw Mic in a loop.",
+"src": "derived",
+"blob": "c73b2ff4ddab55338b93257d7cd8c8e94ee7aab9"
+},
+"HRTF VIs/LV Source/Typedefs/HRTF Config/Draw Selection.vi": {
+"p": "Draws the selection marker/label for the selected item and returns its text.",
+"src": "derived",
+"blob": "c70cca922ebce4222e67b52eef309ed2a8e311f1"
+},
+"HRTF VIs/LV Source/Typedefs/HRTF Config/Draw Speaker Array.vi": {
+"p": "Draws every speaker of the array by calling Draw Speaker in a loop.",
+"src": "derived",
+"blob": "51d6329d0f0c9219de59efc564fd5e2937356e4a"
+},
+"HRTF VIs/LV Source/Typedefs/HRTF Config/Draw Speaker.vi": {
+"p": "Draws one speaker symbol (circles and lines) coloured by its calibration/selection state.",
+"src": "derived",
+"blob": "04bf9b9707e1db1a3a24c3cc2a77d3f2afc1db1d"
+},
+"HRTF VIs/LV Source/Typedefs/HRTF Config/Mics locked Read.vi": {
+"p": "Returns a Boolean `Value` unbundled from the XControl state (not listed as a property in the .xctl).",
+"src": "derived",
+"blob": "2d61c85a4b06e6febac7f18fed11ea5dad507ce4"
+},
+"HRTF VIs/LV Source/Typedefs/HRTF Config/Mics locked Write.vi": {
+"p": "Bundles a Boolean `Value` into the XControl state (not listed as a property in the .xctl).",
+"src": "derived",
+"blob": "35eb815cf68f57ac08350bbbf53c40584394ad6f"
+},
+"HRTF VIs/LV Source/Typedefs/HRTF Config/Process Mouse Move.vi": {
+"p": "Hit-tests mouse coordinates against speaker and mic positions and returns Hover Data (type, index).",
+"src": "derived",
+"blob": "1c2b02dc87a796bea5a7d48d609c18d5a3258e81"
+},
+"HRTF VIs/LV Source/Typedefs/HRTF Config/Resize Picture.vi": {
+"p": "Resizes the picture control to a new width and height less the border.",
+"src": "derived",
+"blob": "04b700be2385b8e0afbf3db9952030cd5b24d737"
+},
+"HRTF VIs/LV Source/Typedefs/HRTF Config/Select next.vi": {
+"p": "XControl method: advances the highlight to the next item and returns its index.",
+"src": "derived",
+"blob": "9332798f62ac238db3e8e4267fa198cf214f9aae"
+},
+"HRTF VIs/LV Source/Typedefs/HRTF Config/Selection changed.vi": {
+"p": "No connector pane and no diagram operations in lvkit output.",
+"src": "derived",
+"blob": "9b265acad0df7e2f512d42314205887b390daba0"
+},
+"HRTF VIs/LV Source/Typedefs/HRTF Config/Update Speaker Selection.vi": {
+"p": "Updates the `selected` flags in the speaker-state array for a click, with Shift extending the range.",
+"src": "derived",
+"blob": "30d23ccc95c82c237c2962e8c0dc8ce6cea28ef2"
+},
+"In-Ear Calibration VIs/LV Source/Calibrate In Ear.vi": {
+"p": "Top-level in-ear calibration application (UI thread + measurement thread): measures each speaker's transfer function with the probe mic and saves it to the data folder.",
+"src": "derived",
+"blob": "e4f2c4f7bc18aaf593cd62360b160631b0d78692"
+},
+"In-Ear Calibration VIs/LV Source/SubVIs/IECal-Check Mic Level.vi": {
+"p": "Returns an error if any absolute AI sample exceeds `Max Vmic` (check skipped when Max Vmic is not > 0).",
+"src": "derived",
+"blob": "d464095e3ce57ed6e2b49b54af7375d0643ee491"
+},
+"In-Ear Calibration VIs/LV Source/SubVIs/IECal-Compute ASTF.vi": {
+"p": "Computes the in-ear acoustic system transfer function (SPL at ear per DAC volt): corrects probe-mic gain, subtracts stimulus spectrum from response spectrum, adds the interpolated probe-tube calibration.",
+"src": "comment",
+"blob": "494ce4e513198a00b50bec98e7e98bd8f77f6b50"
+},
+"In-Ear Calibration VIs/LV Source/SubVIs/IECal-Config.vi": {
+"p": "Creates the calibration stimulus and configures AO and AI for a speaker and mic; returns stimulus, averaging buffer, dt and df.",
+"src": "derived",
+"blob": "19f6fe8b57e05a3dc6e341e1e80b4ffdc360fc6b"
+},
+"In-Ear Calibration VIs/LV Source/SubVIs/IECal-Create Queue Data.vi": {
+"p": "Builds the IECal queue cluster from state and parameters, resolving the speaker to its endpoints, mic and probe-tube file; errors when a name is not found.",
+"src": "derived",
+"blob": "143d1a0f4fc0efad278f8e604a25271b9100fe1d"
+},
+"In-Ear Calibration VIs/LV Source/SubVIs/IECal-Delete Exemplar Plot.vi": {
+"p": "Removes the last (exemplar) plot from the magnitude graph via property nodes.",
+"src": "derived",
+"blob": "742ce8c09850577ca553e0b42dcd53f27074380e"
+},
+"In-Ear Calibration VIs/LV Source/SubVIs/IECal-Find Last N.vi": {
+"p": "Finds the most recent N calibration files for a speaker in the data folder; returns paths and names.",
+"src": "derived",
+"blob": "7545e66f2d43fdbbbab08f9994ef9a58bcf72e53"
+},
+"In-Ear Calibration VIs/LV Source/SubVIs/IECal-Options Dialog.vi": {
+"p": "Options dialog for IECal-Parameters, centred on the parent VI.",
+"src": "derived",
+"blob": "1155fb9befbcd71d52a3fbb9435ab70dc10792b9"
+},
+"In-Ear Calibration VIs/LV Source/SubVIs/IECal-Restore Defaults.vi": {
+"p": "Reads IECal-Parameters from the config file when it exists.",
+"src": "derived",
+"blob": "57b4fd9fc5456f692901e744a068cbdf78cfa130"
+},
+"In-Ear Calibration VIs/LV Source/SubVIs/IECal-Show Last N.vi": {
+"p": "Plots the selected speaker's calibration files from the last N experiments on the magnitude and phase graphs.",
+"src": "derived",
+"blob": "1cecf1cedae7bd578ef0c96235ea4b51acfbc208"
+},
+"In-Ear Calibration VIs/LV Source/SubVIs/IECal-Test Against Exemplar.vi": {
+"p": "Loads a test and an exemplar calibration file and returns an error if their grids differ or the RMS difference (DC excluded) exceeds the tolerance.",
+"src": "derived",
+"blob": "bd3799a755b75fea2636447f1cbf2d3220f445eb"
+},
+"Laser Calibration VIs/LV Source/Laser Calibration.vi": {
+"p": "Top-level laser calibration application with continuous-meter, static I-O and pulse-train I-O measurement threads.",
+"src": "derived",
+"blob": "6bc7f5ee03df5fbf6781cd4aa23a24fdab2f50e5"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/Dialog_LostConnection.vi": {
+"p": "Simple \"lost connection\" dialog that waits for OK.",
+"src": "derived",
+"blob": "4623f383b90897ace2ec7e8568bea8ae45b1d79f"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/Dialog_NoSensor.vi": {
+"p": "\"No sensor\" dialog with a countdown; returns OK or Cancel.",
+"src": "derived",
+"blob": "a48d2ef44ada17fc33b136d9ade74cdebae1eaf2"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/Dialog_ZeroAdjust.vi": {
+"p": "\"Zero adjust\" dialog; returns OK or cancel.",
+"src": "derived",
+"blob": "ba12f6c416f04f395f532b934f98fdf516ee2e7e"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/GetDateTime.vi": {
+"p": "Returns the current date and time as a formatted string.",
+"src": "derived",
+"blob": "f91d09b8cd7df80e6d651ae8632482d629e828b6"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/LogCfg.vi": {
+"p": "Dialog for configuring power-meter logging (samples, interval, averaging, file); opens the log file.",
+"src": "derived",
+"blob": "a9ea6b0f2723c602508efcc2ab245b48c7ce6147"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/MeasCfg.vi": {
+"p": "Dialog for PM100 measurement configuration (beam diameter, attenuation, averaging, bandwidth, zeroing).",
+"src": "derived",
+"blob": "ea8d70f4c49199d853e951b6fa054802dd44d777"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/PM100-Auto Range.vi": {
+"p": "Queries and sets the PM100 power range appropriate for a given power in W (SCPI read/write).",
+"src": "derived",
+"blob": "25a53e47942c09800afdfa68682efc590c99f18c"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/PM100-Get Power Ranges.vi": {
+"p": "Queries the PM100 and returns its list of power-range strings.",
+"src": "derived",
+"blob": "702241d8f8ab52bc2f1c7dd0fc1a49e87a376a69"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/PM100-Get Range.vi": {
+"p": "Queries the PM100 range and returns a formatted range label.",
+"src": "derived",
+"blob": "9c5d0dafe419ce90c171c8c8108419da92843d70"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/PM100-Get Wavelength Limits.vi": {
+"p": "Queries the PM100 for current, minimum and maximum wavelength.",
+"src": "derived",
+"blob": "f79c22aeb1b3a6be50b3a7875efc9952c6c35d6a"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/PM100-PM200 Utility.vi": {
+"p": "Thorlabs PM100/PM200 utility application (large state machine with logging, ranging and unit handling).",
+"src": "derived",
+"blob": "5009d120d4a980b7b93f66937e43a81faa856695"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/PM100-Read Power.vi": {
+"p": "Reads power from the PM100 and returns it in W plus a readout string, scaled by duty cycle.",
+"src": "derived",
+"blob": "a19c98f426421d19d7eba672479c48a3857b57cc"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/PM100-Set Averaging.vi": {
+"p": "Sets PM100 averaging from a time in ms (coerced; about 3000 samples per second).",
+"src": "comment",
+"blob": "bddb59a84f36e64e8d8c2da31e2fc538e7c606e2"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/PM100-Set Range.vi": {
+"p": "Sets the PM100 range by index, or enables auto-ranging.",
+"src": "derived",
+"blob": "8705efb1113a8ec1057354ddd24fc81919d38ab5"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/PM100-Set Wavelength.vi": {
+"p": "Coerces a wavelength to the PM100's limits and writes it; shows a dialog when out of range.",
+"src": "derived",
+"blob": "44816062c0b23e0c5d7799c9b1db4b84856b812a"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/PM100D_Close.vi": {
+"p": "Returns the PM100 to local control and closes the VISA session.",
+"src": "derived",
+"blob": "fb19cf625b6464cd601da09108ed4983f723f5be"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/PM100D_ConfMeas.vi": {
+"p": "Writes a configure-measurement SCPI command to the PM100.",
+"src": "derived",
+"blob": "8408e166d43d7a07fa4c9a1954484d897e2a47f4"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/PM100D_Fetch.vi": {
+"p": "Polls the PM100 until a measurement is ready or the timeout expires and returns the value string.",
+"src": "derived",
+"blob": "5c1401dfd3aef4e2efe7a393655f63714bb6c3bf"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/PM100D_Get-Wave.vi": {
+"p": "Queries the PM100 for current, maximum and minimum wavelength.",
+"src": "derived",
+"blob": "d16a1098c18b8cb8fdba96faae02ede996cc69a9"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/PM100D_GetRngIndex.vi": {
+"p": "Queries the PM100 for its range list, sensor type, current range index and auto-range state.",
+"src": "derived",
+"blob": "475251a96176d6662995da332a9255f53d07284d"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/PM100D_GetRngLbl.vi": {
+"p": "Queries the PM100 range in the selected units and returns it as number, label and auto flag.",
+"src": "derived",
+"blob": "cebd67844bd9108e451afd317a1445a7d38ffa62"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/PM100D_GetSystemInfo.vi": {
+"p": "Gets the PM100 device name and serial number.",
+"src": "doc",
+"blob": "e9fd76450ee7b4548815185caac43ab241fc142b"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/PM100D_Initialize.vi": {
+"p": "Finds and opens the PM100 VISA resource, reads system info and power ranges, and auto-ranges.",
+"src": "derived",
+"blob": "4d2cf6c49ef89cac0d5f63038c24ec76e67fc4f3"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/PM100D_Meas.vi": {
+"p": "Configures a PM100 measurement and fetches the result (ConfMeas + Fetch).",
+"src": "derived",
+"blob": "6c6785654053908d105f7a7801a8d899fd629ab6"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/PM100D_Open.vi": {
+"p": "Opens a PM100 VISA session and returns instrument name and serial number.",
+"src": "derived",
+"blob": "3a6975c5da0aa770c3f636388f6830d7eb3f55ef"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/PM100D_Ranging.vi": {
+"p": "Sets the PM100 current/voltage range and reads it back in the selected unit.",
+"src": "comment",
+"blob": "286a3dc85dd1dd93ad83ca99af6aa654283e2888"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/PM100D_Read.vi": {
+"p": "Sends a SCPI query to the PM100 and reads the reply.",
+"src": "doc",
+"blob": "25f9b98ae0f7e769017bd46f300145fa36b974ae"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/PM100D_SensIDNFlag.vi": {
+"p": "Decodes the PM100 sensor flag number into individual capability Booleans.",
+"src": "derived",
+"blob": "6e430b7857e5f47b887497f9c6b1b84dbd65e1ba"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/PM100D_SetRngIndex.vi": {
+"p": "Sets the PM100 range by index (or auto) and returns the resulting range label and value.",
+"src": "derived",
+"blob": "0305ed8dd2e8bb44395abde09f7848bd36819141"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/PM100D_Write.vi": {
+"p": "Writes a SCPI command to the PM100.",
+"src": "doc",
+"blob": "a022358144cf267ebcafeb2e506d4b6f76e0daca"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/PM100D_Zeroing.vi": {
+"p": "Runs the PM100 zero adjustment and returns the zero value.",
+"src": "derived",
+"blob": "e5889cea9fac8278f601bcf55b749d43855d9f1c"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/Read_PanelBounds.vi": {
+"p": "Reads panel bounds from an INI file and applies them to a VI by reference.",
+"src": "derived",
+"blob": "69f32ffc24c93b1f0e933209a7cb653ddf3d6437"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/Select INSTR Dialog.vi": {
+"p": "Dialog listing VISA instruments (with rescan) and returning the selected resource.",
+"src": "derived",
+"blob": "d450366f784f073170431f484b9533c47e0a8667"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/SetRange.vi": {
+"p": "Dialog for stepping the PM100 range up/down or setting auto.",
+"src": "derived",
+"blob": "cff1f586d6556327ba76d9de591be5cbb8f93e8b"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/SetUnits.vi": {
+"p": "Dialog for selecting main and sub display units.",
+"src": "derived",
+"blob": "ab668c212f846066e307b14f2370597789e1b4a3"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/SetWavelength.vi": {
+"p": "Dialog for entering wavelength and responsivity within limits.",
+"src": "derived",
+"blob": "0a672c1013b7f5d97a8b83459593559126f3bf43"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/Write_PanelBounds.vi": {
+"p": "Writes a VI's panel bounds to an INI file.",
+"src": "derived",
+"blob": "3b28e3d337931f854250360241ef226ec02891c9"
+},
+"Laser Calibration VIs/LV Source/PM100 VIs/lin-log.vi": {
+"p": "Converts four power values from W to dBm.",
+"src": "derived",
+"blob": "127e3dc8e246650f7839bd1109e358572434a2b8"
+},
+"Laser Calibration VIs/LV Source/SubVIs/LaserCal-Clear Voltages.vi": {
+"p": "Initialises the PXI AO channels and plays a buffer of zeros to clear the laser command voltages.",
+"src": "derived",
+"blob": "41f2963bac722ca6300dca9e0c5ae3cb68908fe6"
+},
+"Laser Calibration VIs/LV Source/SubVIs/LaserCal-Compute I-O.vi": {
+"p": "Computes the static I-O curve from the acquired time-domain data (mean of samples after the settle point) and updates the two graphs.",
+"src": "derived",
+"blob": "d4a825e1f4d3f2bd7f58f8a277e9baa400822931"
+},
+"Laser Calibration VIs/LV Source/SubVIs/LaserCal-Create Data Header (I-O).vi": {
+"p": "Builds the data-file header string from the I-O stimulus and response parameters.",
+"src": "derived",
+"blob": "276a4aaa66d00f3527e13324e56552216fe3f535"
+},
+"Laser Calibration VIs/LV Source/SubVIs/LaserCal-Create Stimulus.vi": {
+"p": "Builds the AO stimulus array for the laser (DC command or pulse train via PulseTrain-Create, optionally zero) and returns its duty cycle.",
+"src": "derived",
+"blob": "bd2dc6007018c45ffba386f38de84587eb51143d"
+},
+"Laser Calibration VIs/LV Source/SubVIs/LaserCal-Init Graphs (I-O).vi": {
+"p": "Prepares the time and I-O graphs (plots, colours, axis range) and the I-O data cluster before a static I-O measurement.",
+"src": "derived",
+"blob": "cf21018c4bb0aa3a06adba55b446e84b4560f1a2"
+},
+"Laser Calibration VIs/LV Source/SubVIs/LaserCal-Init Meter (PT).vi": {
+"p": "Prepares the PM100 for pulse-train measurements: auto-ranges and sets the averaging time.",
+"src": "derived",
+"blob": "e58cf99b619c8da51bb03bea60c0f2c2405261c8"
+},
+"Laser Calibration VIs/LV Source/SubVIs/LaserCal-Initialize (Dynamic).vi": {
+"p": "Initialises a dynamic I-O run: PXI AO setup, parsed command-voltage sequence, data cluster and stimulus parameters.",
+"src": "derived",
+"blob": "19844ff9d247eaa7df88d1a255283cb1276316a6"
+},
+"Laser Calibration VIs/LV Source/SubVIs/LaserCal-Initialize (I-O).vi": {
+"p": "Initialises a static I-O run: PXI AO setup, sequence variables, data header and pre-allocated data cluster.",
+"src": "derived",
+"blob": "0c67135e15ee3d4bb014aff39c1c7986ea0148b1"
+},
+"Laser Calibration VIs/LV Source/SubVIs/LaserCal-Initialize (PT).vi": {
+"p": "Initialises a pulse-train I-O run from LaserCal-Settings: parses voltage/width/rate lists into a stimulus-condition list, builds the header and data cluster, sets up AO.",
+"src": "derived",
+"blob": "602c87b252707666131d37c696938cc4db99f226"
+},
+"Laser Calibration VIs/LV Source/SubVIs/LaserCal-Initialize (meter).vi": {
+"p": "Initialises the continuous-meter mode: PXI AO setup with auto-ramping and the stimulus buffer; returns runtime state and duty cycle.",
+"src": "derived",
+"blob": "576ddeec0c9410ab544f2c0f2c927539443b6e47"
+},
+"Laser Calibration VIs/LV Source/SubVIs/LaserCal-Interp.vi": {
+"p": "Returns a single number from pulse-train I-O data for a pulse width and rate; lvkit shows only one Case structure, so the lookup detail is not visible.",
+"src": "derived",
+"blob": "54b9e02cf1947f18e022a46206623592fac9610b"
+},
+"Laser Calibration VIs/LV Source/SubVIs/LaserCal-Load Data (I-O).vi": {
+"p": "Loads a laser calibration file, detects its type from the header and returns the matching static, dynamic or pulse-train data cluster and parameters.",
+"src": "derived",
+"blob": "ad7514d8e1f81b826a725d71e90ffeb693b77bc8"
+},
+"Laser Calibration VIs/LV Source/SubVIs/LaserCal-Modify Header For Current Mode.vi": {
+"p": "Rewrites a data header for current mode: converts the voltage axis to current (mA/V) when saving with current as the input variable.",
+"src": "comment",
+"blob": "2e38ed2adb5d4cd1634de11bc655af37182ff405"
+},
+"Laser Calibration VIs/LV Source/SubVIs/LaserCal-Options Dialog.vi": {
+"p": "Options dialog for LaserCal-Options (current mode, mA/V), centred on the parent VI.",
+"src": "derived",
+"blob": "59e41c33cff442f3c0ebb02ad84856cf5e6d1021"
+},
+"Laser Calibration VIs/LV Source/SubVIs/LaserCal-Plot Data (PT).vi": {
+"p": "Plots pulse-train I-O data against the chosen X axis and parameter (voltage, width or rate) on an XY graph with a colour map.",
+"src": "derived",
+"blob": "a578eef6b9bd49c884467ce414c0e84093515566"
+},
+"Laser Calibration VIs/LV Source/SubVIs/LaserCal-Process Data (Dynamic).vi": {
+"p": "Stores a measured power value at the sequence index in the dynamic I-O data cluster.",
+"src": "derived",
+"blob": "74b03d9b912705b00e9947319963b168fec07b49"
+},
+"Laser Calibration VIs/LV Source/SubVIs/LaserCal-Process Data (I-O).vi": {
+"p": "Stores a measured power sample and time in the static I-O data cluster at the sequence index and updates the graphs.",
+"src": "derived",
+"blob": "4f9b103462ca4b0e0e141332b746b4044bc4bbbb"
+},
+"Laser Calibration VIs/LV Source/SubVIs/LaserCal-Process Data (PT).vi": {
+"p": "Stores a measured power value (scaled) at the stimulus-condition indices in the pulse-train I-O data cluster.",
+"src": "derived",
+"blob": "07f229fd53552f2a4821ff79598078325e01dc99"
+},
+"Laser Calibration VIs/LV Source/SubVIs/LaserCal-Restore Defaults.vi": {
+"p": "Reads LaserCal-Settings from the config file (Read Anything).",
+"src": "derived",
+"blob": "dc1ec9c64f1250d26e7ac278168ff13aab7e9265"
+},
+"Laser Calibration VIs/LV Source/SubVIs/LaserCal-Save Data (Dynamic).vi": {
+"p": "Prompts for a file and saves dynamic laser calibration data with a header (system ID, date, software version).",
+"src": "derived",
+"blob": "8ea3a44d084386fa04d65259202c35d85df4534e"
+},
+"Laser Calibration VIs/LV Source/SubVIs/LaserCal-Save Data (I-O).vi": {
+"p": "Prompts for a file and saves static I-O laser calibration data (I-O and time-domain tables) with a header.",
+"src": "derived",
+"blob": "403eb411c07b4e57e570a37851a7420766c18e4c"
+},
+"Laser Calibration VIs/LV Source/SubVIs/LaserCal-Save Data (PT).vi": {
+"p": "Prompts for a file and saves pulse-train laser calibration data with a header, honouring the current-mode options.",
+"src": "derived",
+"blob": "39528dd67218316d8e50f30ae868b61c78c1e1a2"
+},
+"Laser Calibration VIs/LV Source/SubVIs/LaserCal-Set Icon Color.vi": {
+"p": "Recolours a PNG icon image to the given colour and returns it as a picture.",
+"src": "derived",
+"blob": "d31424e2bc6ae6ccb39374c3ab726b1cbe88262a"
+},
+"Laser Calibration VIs/LV Source/SubVIs/LaserCal-Update Sequence (I-O).vi": {
+"p": "Rebuilds the laser stimulus for the next static I-O sequence value and fires the StartDAQ notifier.",
+"src": "derived",
+"blob": "53f8cfdd5d8742ddd10f808880870fae556ad6b7"
+},
+"Laser Calibration VIs/LV Source/SubVIs/LaserCal-Update Sequence (PT).vi": {
+"p": "Rebuilds the laser stimulus for the next pulse-train condition and fires the StartDAQ notifier.",
+"src": "derived",
+"blob": "a1f8e93253d4659659f5af0fc98e21425b904b75"
+},
+"Laser Calibration VIs/LV Source/SubVIs/LaserCal-V to mW.vi": {
+"p": "Looks up the pulse-train I-O data for a pulse width and rate and interpolates power (mW) for a command voltage.",
+"src": "derived",
+"blob": "53ea474a701b62ee4d10bc550328036162272a3e"
+},
+"Laser Calibration VIs/LV Source/SubVIs/LaserCal-mW to V (static).vi": {
+"p": "Interpolates a static I-O curve to find the command voltage for a requested power level; also returns max power.",
+"src": "derived",
+"blob": "d6537a5a8070551686b436fa7a0393154bbd5966"
+},
+"Laser Calibration VIs/LV Source/SubVIs/LaserCal-mW to V.vi": {
+"p": "Looks up the pulse-train I-O data for a pulse width and rate and interpolates the command voltage for a requested power (mW); errors if the condition is absent.",
+"src": "derived",
+"blob": "97cf00f45a1b52ac51b1342595e87ee4829eab58"
+},
+"Probe Tube Calibration VIs/LV Source/Calibrate Probe Tube.vi": {
+"p": "Top-level probe-tube calibration application (UI thread + measurement thread): measures the probe mic against the calibration mic for the chosen ear.",
+"src": "derived",
+"blob": "f1df7d13f8108a11f7120adbd7684c348836ad4f"
+},
+"Probe Tube Calibration VIs/LV Source/Sub VIs/CPT-Compute PTC.vi": {
+"p": "Computes the probe-tube correction: FFTs the probe and calibration mic signals, corrects each for gain and sensitivity and takes the dB difference.",
+"src": "comment",
+"blob": "25eed97bb43df8fc7862adf5c5a9478193e2c794"
+},
+"Probe Tube Calibration VIs/LV Source/Sub VIs/PTC-Config.vi": {
+"p": "Creates the calibration stimulus and configures AO and two-channel AI (probe mic and cal mic); returns the averaging buffer, dt and df.",
+"src": "derived",
+"blob": "28943f1f5a39a17d4d974af630e4f5ef87e7e0e0"
+},
+"Probe Tube Calibration VIs/LV Source/Sub VIs/PTC-Create Queue Data.vi": {
+"p": "Builds the PTC queue cluster from state and parameters, resolving speaker, probe mic and cal mic names to endpoints; errors when a name is not found.",
+"src": "derived",
+"blob": "519eb23d97d190b72b7b0c339419cbbd35733faa"
+},
+"Probe Tube Calibration VIs/LV Source/Sub VIs/PTC-Restore Defaults.vi": {
+"p": "Reads PTC-Parameters from the config file when it exists.",
+"src": "derived",
+"blob": "c46e8e458b748781d490f1fdbd4436353fa46f8e"
+},
+"Speaker Array VIs/LV Source/SAC Config/Check Size.vi": {
+"p": "Computes the minimum control width and height from the XControl state and picture size.",
+"src": "derived",
+"blob": "b11618f5da244aa00ae4d270a88277f98b453afd"
+},
+"Speaker Array VIs/LV Source/SAC Config/Compute Layout.vi": {
+"p": "Computes the speaker-ring layout (positions by sine/cosine) and the picture and control sizes.",
+"src": "derived",
+"blob": "d278a6f66c48fe9597c655e9931c14fd0f8efcf2"
+},
+"Speaker Array VIs/LV Source/SAC Config/Create Events.vi": {
+"p": "XControl method: creates the Selection-change user event and returns it in an Events cluster.",
+"src": "derived",
+"blob": "408be97c98f5bbd23e4e4101b1ff88c7fd20bc3c"
+},
+"Speaker Array VIs/LV Source/SAC Config/Draw Background.vi": {
+"p": "Draws the background (radial lines) for the speaker ring into a picture.",
+"src": "derived",
+"blob": "143a9fa9de7571c81c7c71de0e20c8abd7c33556"
+},
+"Speaker Array VIs/LV Source/SAC Config/Draw Selection.vi": {
+"p": "Draws the selection marker/label for the selected speaker and returns its text.",
+"src": "derived",
+"blob": "607b7c1ee3a3198d68342bf1fd09befb2a5846ec"
+},
+"Speaker Array VIs/LV Source/SAC Config/Draw Speaker Array.vi": {
+"p": "Draws every speaker of the array by calling Draw Speaker in a loop.",
+"src": "derived",
+"blob": "cdc4618b45c1df83ddefd0faf36f68c71d781f78"
+},
+"Speaker Array VIs/LV Source/SAC Config/Draw Speaker.vi": {
+"p": "Draws one speaker symbol (circles and lines) coloured by its calibration/selection state.",
+"src": "derived",
+"blob": "0af81ab0140773241dd98d686cbe672204d43b17"
+},
+"Speaker Array VIs/LV Source/SAC Config/Process Mouse Move.vi": {
+"p": "Hit-tests mouse coordinates against speaker positions and returns Hover Data (type, index).",
+"src": "derived",
+"blob": "a4e2183ea652b52f16c470a8ab8b5dfec8187fbb"
+},
+"Speaker Array VIs/LV Source/SAC Config/Resize Picture.vi": {
+"p": "Resizes the picture control to a new width and height less the border.",
+"src": "derived",
+"blob": "ea34396274f354687f142d6cd613ff62f8725374"
+},
+"Speaker Array VIs/LV Source/SAC Config/Select next.vi": {
+"p": "XControl method: advances the highlight to the next item and returns its index.",
+"src": "derived",
+"blob": "c4dc1155256bef537a36e7a6e7b16af5294975cc"
+},
+"Speaker Array VIs/LV Source/SAC Config/Update Speaker Selection.vi": {
+"p": "Updates the `selected` flags in the speaker-state array for a click, with Shift extending the range.",
+"src": "derived",
+"blob": "df50e87bc37918c9230771c5da1f353a489cab55"
+},
+"Speaker Array VIs/LV Source/Speaker Array Calibration.vi": {
+"p": "Top-level speaker-array calibration application (UI thread + state-machine measurement thread).",
+"src": "derived",
+"blob": "92d7ded231af912a0ccd6f11be94efcf410008d2"
+},
+"Speaker Array VIs/LV Source/Sub VIs/SAC-Add Filestem to Ring.vi": {
+"p": "Adds a filestem to a ring control's strings if absent, keeping them sorted with SAC-Sort Filestems.",
+"src": "derived",
+"blob": "23c56ecbb7fd258be2ccfc84abefaa9176684909"
+},
+"Speaker Array VIs/LV Source/Sub VIs/SAC-Apply Window.vi": {
+"p": "Applies a window of given length and centre to a complex spectrum in the time domain (inverse FFT, window, FFT).",
+"src": "derived",
+"blob": "e0bb314e3b020bf622e8b99c5e27cc78a0e8990c"
+},
+"Speaker Array VIs/LV Source/Sub VIs/SAC-Build Filename.vi": {
+"p": "Builds the data-file path and filestem from SAC-State.",
+"src": "derived",
+"blob": "19daf5e48956bf4e5fb18b71fcd09eeb9d2e44e2"
+},
+"Speaker Array VIs/LV Source/Sub VIs/SAC-Build Matfile Path.vi": {
+"p": "Builds the MAT-file path and filestem from SAC-State.",
+"src": "derived",
+"blob": "5c4c5d1961c25cf2365586461608149e6fd6974a"
+},
+"Speaker Array VIs/LV Source/Sub VIs/SAC-Compute ASTF.vi": {
+"p": "Reads a speaker work file, windows and FFTs it, resamples to the desired Fs and writes the speaker transfer function to a MAT file with backup.",
+"src": "derived",
+"blob": "616b3f1ed3abb8a27030ac92789cf8359efecadc"
+},
+"Speaker Array VIs/LV Source/Sub VIs/SAC-Compute ASTFs.vi": {
+"p": "Loops over the data files in the state folder and computes a transfer function for each with SAC-Compute ASTF, updating a progress indicator.",
+"src": "derived",
+"blob": "642892a5d87c6868e220fb1aff00e6a212eb801a"
+},
+"Speaker Array VIs/LV Source/Sub VIs/SAC-Configure Hardware (NI).vi": {
+"p": "Creates the stimulus and configures NI PXI AO/AI for the speaker array; returns stimulus, sample rate, points per rep and reps per frame.",
+"src": "derived",
+"blob": "9aaa7bada3bee1472e81a041ba02467907936af0"
+},
+"Speaker Array VIs/LV Source/Sub VIs/SAC-Configure Hardware (TDT).vi": {
+"p": "Creates the stimulus and configures TDT hardware from the saved device config; returns stimulus, sample rate, points per rep and reps per frame.",
+"src": "derived",
+"blob": "2e484100f81b66f004d5c8003dec12ac0de92325"
+},
+"Speaker Array VIs/LV Source/Sub VIs/SAC-Create Stimulus.vi": {
+"p": "Creates the speaker-array stimulus (chirp via ACal-Create Chirp or a binary sequence) and returns it with time, autocorrelation, magnitude and phase plots.",
+"src": "derived",
+"blob": "de5a68eff00755e25a89d9e93cc9aeb8e0d79f15"
+},
+"Speaker Array VIs/LV Source/Sub VIs/SAC-Devices Dialog (TDT).vi": {
+"p": "Dialog for editing the input/output device tables stored in the connections file.",
+"src": "derived",
+"blob": "231655d73abb023e4e7ae80d49b4e566606b9d13"
+},
+"Speaker Array VIs/LV Source/Sub VIs/SAC-Enum Data Files.vi": {
+"p": "Checks which data (or ASTF) files exist for each azimuth; returns filestems and a Boolean status array.",
+"src": "derived",
+"blob": "770877c4c940ce0e15937a6b868da49a965cf598"
+},
+"Speaker Array VIs/LV Source/Sub VIs/SAC-Options Dialog.vi": {
+"p": "Dialog for editing SAC-Options (root folder, wait, azimuths).",
+"src": "derived",
+"blob": "429b24dba7252a73ba9c16709861ca6f46a13386"
+},
+"Speaker Array VIs/LV Source/Sub VIs/SAC-Plot Response.vi": {
+"p": "Builds time, cross-correlation, magnitude and phase plot clusters from the SAC runtime data.",
+"src": "derived",
+"blob": "b398bb5d0d36e1d87ec01f8c616a5bc401b88f7f"
+},
+"Speaker Array VIs/LV Source/Sub VIs/SAC-Process Frame.vi": {
+"p": "Adds an acquired AI frame into the running mic sum and reports `Finished` and a status string.",
+"src": "derived",
+"blob": "5b782fa9b2360c7c744ba03dddd3b80ccd714954"
+},
+"Speaker Array VIs/LV Source/Sub VIs/SAC-Read ASTFs.vi": {
+"p": "Reads the stored transfer function for a filestem and returns impulse-response, magnitude and phase plots.",
+"src": "derived",
+"blob": "242d801239a75bcb1ad384b86955e29cd1a305f1"
+},
+"Speaker Array VIs/LV Source/Sub VIs/SAC-Read Responses.vi": {
+"p": "Reads saved responses for a filestem via SAC-Read Work and returns time, cross-correlation, magnitude and phase plots.",
+"src": "derived",
+"blob": "79a4e3be366e59496f52e43ba3adeaeef5a25ae7"
+},
+"Speaker Array VIs/LV Source/Sub VIs/SAC-Read Work.vi": {
+"p": "Reads Params and Result (Stimulus, Response) from a SAC work file (Read Anything twice).",
+"src": "derived",
+"blob": "e61dd22993b3dd715ba0fb3682fb1940dc3b3d76"
+},
+"Speaker Array VIs/LV Source/Sub VIs/SAC-Register Control Events.vi": {
+"p": "Registers for the SAC Config XControl's Selection-change user event.",
+"src": "derived",
+"blob": "aa42c07f4ea0ab13c267dd5e6302220943c238a4"
+},
+"Speaker Array VIs/LV Source/Sub VIs/SAC-Sort Filestems.vi": {
+"p": "Sorts filestems by a number parsed out of each name with a regex.",
+"src": "derived",
+"blob": "af48367ab1f86c4f3dd7d1ee58a8fce487de9f7e"
+},
+"Speaker Array VIs/LV Source/Sub VIs/SAC-Write Text File.vi": {
+"p": "Writes parameters, stimulus and data to a SAC data file, backing up an existing file.",
+"src": "derived",
+"blob": "a8a1b7eb3863babd67b13ecaa747eb452f4729c7"
+}
+}
